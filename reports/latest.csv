@@ -1,22 +1,17 @@
 ticker,empresa,sector,precio,fase,fase_txt,etapa,piso,techo,ancho_pct,vol_ratio,rs_mansfield,rs_mejora,fund_score,fund_disp,veredicto,ultimo_evento,fecha_evento
 A,"Agilent Technologies, Inc.",Healthcare,174.76,1,Rango · Fase B,2,107.98,149.25,69.5,1.23,23.77,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-06-05
-ACGL,Arch Capital Group Ltd.,Financial Services,107.28,4,LPS · Fase D,3,87.42,110.75,30.5,1.32,7.97,True,5,7,CANDIDATO ✓,LPS,2026-08-14
 ADP,"Automatic Data Processing, Inc.",Technology,303.35,1,Rango · Fase B,2,185.56,259.65,54.2,1.92,22.05,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-07-17
 AES,The AES Corporation,Utilities,14.87,3,CHoCH/SOS · Fase D,3,12.21,17.03,7.0,4.62,1.43,True,3,7,"Técnico sí, fundamental débil",CHoCH (sin volumen),2026-07-10
 AJG,Arthur J. Gallagher & Co.,Financial Services,281.61,4,LPS · Fase D,2,189.61,264.47,55.3,2.3,15.78,True,6,7,CANDIDATO ✓,LPS,2026-08-07
 ALGN,"Align Technology, Inc.",Healthcare,166.0,1,Rango · Fase B,1,138.05,192.45,38.3,0.93,-3.29,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-10-23
 ALLE,Allegion plc,Industrials,185.39,1,Rango · Fase B,2,124.05,171.99,57.5,1.21,17.82,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-08-14
-AMCR,Amcor plc,Consumer Cyclical,44.87,4,LPS · Fase D,1,38.31,51.15,41.4,1.27,4.24,True,4,7,"Técnico sí, fundamental débil",LPS,2026-10-09
-AMGN,Amgen Inc.,Healthcare,460.42,3,CHoCH/SOS · Fase D,2,242.02,324.31,51.7,2.18,22.69,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2025-03-07
+AMCR,Amcor plc,Consumer Cyclical,44.87,1,Rango · Fase B,1,35.15,48.76,41.4,1.27,4.24,True,4,7,No cumple,Rango detectado,2026-07-24
 AMP,"Ameriprise Financial, Inc.",Financial Services,501.49,4,LPS · Fase D,1,388.42,541.66,32.6,1.25,0.01,True,7,7,CANDIDATO ✓,LPS,2026-06-05
-AMT,American Tower Corporation (REI,Real Estate,188.79,3,CHoCH/SOS · Fase D,1,162.89,219.15,27.9,1.09,4.84,True,4,7,"Técnico sí, fundamental débil",CHoCH (sin volumen),2025-07-18
+AMT,American Tower Corporation (REI,Real Estate,188.79,1,Rango · Fase B,1,158.35,192.15,27.9,1.09,4.84,True,4,7,No cumple,Rango detectado,2026-08-28
 AMZN,"Amazon.com, Inc.",Consumer Cyclical,259.3,1,Rango · Fase B,3,196.0,273.88,27.3,0.88,4.74,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-05-01
-AON,Aon plc,Financial Services,334.81,2,Spring/Test · Fase C,1,274.68,380.5,43.2,1.01,-1.36,True,5,7,Vigilar: falta CHoCH,Spring,2026-10-16
 AOS,A.O. Smith Corporation,Industrials,64.55,3,CHoCH/SOS · Fase D,1,57.52,80.43,27.3,1.22,-1.36,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-08-07
-APD,"Air Products and Chemicals, Inc",Basic Materials,304.84,4,LPS · Fase D,3,234.32,326.04,21.5,0.54,5.74,True,4,7,"Técnico sí, fundamental débil",LPS,2026-03-06
 APO,"Apollo Global Management, Inc. ",Financial Services,116.75,2,Spring/Test · Fase C,1,110.28,143.72,30.8,1.69,-9.68,True,0,5,No cumple,Spring (vol bajo),2026-10-23
-AVY,Avery Dennison Corporation,Consumer Cyclical,186.78,4,LPS · Fase D,1,151.84,198.7,29.5,1.03,5.33,True,6,7,CANDIDATO ✓,LPS,2026-09-11
-AWK,"American Water Works Company, I",Utilities,150.29,4,LPS · Fase D,3,113.54,146.31,28.3,1.35,11.03,True,3,7,"Técnico sí, fundamental débil",LPS,2026-10-09
+AVY,Avery Dennison Corporation,Consumer Cyclical,186.78,3,CHoCH/SOS · Fase D,1,157.26,196.15,29.5,1.03,5.33,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-11-06
 AXP,American Express Company,Financial Services,320.99,3,CHoCH/SOS · Fase D,1,288.37,383.18,22.2,0.95,-5.96,True,5,6,CANDIDATO ✓,CHoCH (sin volumen),2026-06-26
 AZO,"AutoZone, Inc.",Consumer Cyclical,3216.35,3,CHoCH/SOS · Fase D,1,2902.2,3887.03,28.1,1.14,-6.45,True,5,5,CANDIDATO ✓,CHoCH (sin volumen),2026-10-23
 BA,Boeing Company (The),Industrials,173.4,1,Rango · Fase B,1,176.77,242.69,47.9,0.39,-21.62,False,3,5,No cumple,Rango detectado,2026-01-09
@@ -30,33 +25,28 @@ BXP,"BXP, Inc.",Real Estate,65.01,1,Rango · Fase B,2,47.99,66.54,32.3,1.14,1.85
 CAH,"Cardinal Health, Inc.",Healthcare,271.72,1,Rango · Fase B,2,179.64,244.3,59.4,1.28,20.68,True,5,5,Vigilar: falta CHoCH,Rango detectado,2026-08-07
 CARR,Carrier Global Corporation,Industrials,52.38,1,Rango · Fase B,1,49.46,67.55,45.5,0.67,-14.66,True,2,6,No cumple,Rango detectado,2026-03-06
 CBRE,CBRE Group Inc,Real Estate,135.51,2,Spring/Test · Fase C,1,125.78,174.27,28.9,1.0,-9.43,True,6,7,Vigilar: falta CHoCH,Test,2026-10-30
-CCI,Crown Castle Inc.,Real Estate,88.6,3,CHoCH/SOS · Fase D,1,68.72,92.63,43.1,1.01,4.7,True,3,5,"Técnico sí, fundamental débil",CHoCH (sin volumen),2026-10-09
 CDNS,"Cadence Design Systems, Inc.",Technology,319.92,1,Rango · Fase B,1,262.75,342.37,52.6,0.94,-4.02,False,7,7,Vigilar: falta CHoCH,Rango detectado,2026-05-01
 CEG,Constellation Energy Corporatio,Utilities,249.95,1,Rango · Fase B,1,228.28,316.76,38.8,0.75,-17.02,False,5,7,Vigilar: falta CHoCH,Rango detectado,2026-11-06
-CHD,"Church & Dwight Company, Inc.",Consumer Defensive,109.33,4,LPS · Fase D,3,80.29,99.09,28.1,1.78,11.57,True,6,7,CANDIDATO ✓,LPS,2026-04-03
-CI,The Cigna Group,Healthcare,293.59,3,CHoCH/SOS · Fase D,1,234.2,312.23,21.6,1.1,2.67,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-10-16
-CL,Colgate-Palmolive Company,Consumer Defensive,96.56,4,LPS · Fase D,3,75.58,92.79,21.4,1.54,7.9,True,5,7,CANDIDATO ✓,LPS,2026-04-24
-CLX,Clorox Company (The),Consumer Defensive,99.96,1,Rango · Fase B,1,77.99,107.85,38.3,0.9,-0.54,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-11-06
+CI,The Cigna Group,Healthcare,293.59,3,CHoCH/SOS · Fase D,1,253.96,299.92,21.6,1.1,2.67,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-10-16
+CL,Colgate-Palmolive Company,Consumer Defensive,96.56,4,LPS · Fase D,3,74.38,92.79,21.4,1.54,7.9,True,5,7,CANDIDATO ✓,LPS,2026-04-24
+CLX,Clorox Company (The),Consumer Defensive,99.96,2,Spring/Test · Fase C,1,82.52,112.33,38.3,0.9,-0.54,True,6,7,Vigilar: falta CHoCH,Test (vol bajo),2026-10-16
 CMG,"Chipotle Mexican Grill, Inc.",Consumer Cyclical,34.43,3,CHoCH/SOS · Fase D,1,29.75,41.52,43.1,0.97,-3.1,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-07-31
 CMS,CMS Energy Corporation,Utilities,69.18,1,Rango · Fase B,1,61.79,77.61,25.6,0.91,-5.55,True,3,7,No cumple,Rango detectado,2026-10-09
 COF,Capital One Financial Corporati,Financial Services,201.87,4,LPS · Fase D,1,173.62,240.55,30.9,1.15,-4.7,True,4,5,"Técnico sí, fundamental débil",LPS,2026-10-02
 COP,ConocoPhillips,Energy,136.27,1,Rango · Fase B,1,102.01,141.62,51.2,0.98,15.05,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-10-09
 COR,"Cencora, Inc.",Healthcare,333.56,1,Rango · Fase B,1,243.78,338.71,44.9,1.81,0.2,True,5,6,Vigilar: falta CHoCH,Rango detectado,2026-09-18
-COST,Costco Wholesale Corporation,Consumer Defensive,1053.56,4,LPS · Fase D,3,839.11,997.15,24.0,1.1,7.0,True,7,7,CANDIDATO ✓,LPS,2026-03-06
 CPAY,"Corpay, Inc.",Technology,455.16,5,Ruptura · Fase E (Etapa 2),2,271.22,361.99,49.3,1.51,27.59,True,6,7,CANDIDATO ✓,Ruptura sin CHoCH previo,2026-11-06
 CPRT,"Copart, Inc.",Industrials,31.95,1,Rango · Fase B,1,25.72,35.66,38.6,1.34,-8.45,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-11-06
-CPT,Camden Property Trust,Real Estate,99.44,4,LPS · Fase D,3,93.28,114.26,24.4,0.71,-6.85,True,6,7,CANDIDATO ✓,LPS,2026-10-09
-CSX,CSX Corporation,Industrials,49.12,4,LPS · Fase D,2,25.68,35.88,21.6,1.08,9.65,True,6,7,CANDIDATO ✓,LPS,2025-09-12
+CPT,Camden Property Trust,Real Estate,99.44,1,Rango · Fase B,3,93.6,118.52,24.4,0.71,-6.85,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-07-17
 CTAS,Cintas Corporation,Industrials,222.36,4,LPS · Fase D,2,160.31,207.97,45.6,1.28,13.82,True,7,7,CANDIDATO ✓,LPS,2026-08-21
 CVX,Chevron Corporation,Energy,212.61,1,Rango · Fase B,1,163.35,217.78,44.8,1.31,12.44,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-09-25
 DAL,"Delta Air Lines, Inc.",Industrials,87.2,5,Ruptura · Fase E (Etapa 2),2,54.45,75.58,41.2,1.25,14.08,True,6,7,CANDIDATO ✓,Ruptura Etapa 2,2026-09-18
 DD,"DuPont de Nemours, Inc.",Basic Materials,146.52,1,Rango · Fase B,1,122.8,153.63,27.0,1.02,5.79,True,4,6,No cumple,Rango detectado,2026-09-18
 DE,Deere & Company,Industrials,671.65,1,Rango · Fase B,1,512.6,704.2,40.4,1.56,12.91,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-09-18
 DG,Dollar General Corporation,Consumer Defensive,133.75,1,Rango · Fase B,1,98.57,133.5,46.7,0.96,3.73,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-09-11
-DHI,"D.R. Horton, Inc.",Consumer Cyclical,152.28,3,CHoCH/SOS · Fase D,1,133.55,182.36,30.6,0.82,0.01,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-02-13
+DHI,"D.R. Horton, Inc.",Consumer Cyclical,152.28,2,Spring/Test · Fase C,1,130.96,170.28,30.6,0.82,0.01,True,5,7,Vigilar: falta CHoCH,Spring,2026-10-16
 DHR,Danaher Corporation,Healthcare,230.25,3,CHoCH/SOS · Fase D,2,160.31,219.54,48.7,1.59,8.73,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-08-07
 DIS,Walt Disney Company (The),Communication Services,116.75,3,CHoCH/SOS · Fase D,1,87.96,122.91,30.6,1.56,8.66,True,5,7,CANDIDATO ✓,CHoCH + SOS,2026-08-07
-DOC,"Healthpeak Properties, Inc.",Real Estate,20.26,4,LPS · Fase D,3,15.59,20.42,23.8,0.7,8.36,True,5,6,CANDIDATO ✓,LPS,2026-06-05
 DOV,Dover Corporation,Industrials,203.85,2,Spring/Test · Fase C,1,187.72,233.03,26.6,0.89,-3.73,True,7,7,Vigilar: falta CHoCH,Test (vol bajo),2026-10-09
 DPZ,Domino's Pizza Inc,Consumer Cyclical,334.28,1,Rango · Fase B,1,280.27,377.45,32.0,1.11,-8.3,True,4,5,No cumple,Rango detectado,2026-09-18
 DRI,"Darden Restaurants, Inc.",Consumer Cyclical,226.35,4,LPS · Fase D,3,163.8,217.94,25.2,1.19,10.37,True,5,7,CANDIDATO ✓,LPS,2026-04-17
@@ -64,15 +54,13 @@ DTE,DTE Energy Company,Utilities,135.08,2,Spring/Test · Fase C,1,120.24,154.34,
 DVN,Devon Energy Corporation,Energy,42.21,1,Rango · Fase B,1,39.74,52.0,31.5,1.31,-6.03,False,6,7,Vigilar: falta CHoCH,Rango detectado,2026-09-25
 DXCM,"DexCom, Inc.",Healthcare,79.41,1,Rango · Fase B,2,56.72,75.98,60.6,1.67,6.26,False,7,7,Vigilar: falta CHoCH,Rango detectado,2026-05-15
 ECL,Ecolab Inc.,Basic Materials,300.68,1,Rango · Fase B,1,241.85,306.79,31.9,1.45,6.89,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-08-14
-EG,"Everest Group, Ltd.",Financial Services,411.11,5,Ruptura · Fase E (Etapa 2),2,312.58,388.3,37.7,2.22,15.56,True,6,7,CANDIDATO ✓,Ruptura Etapa 2,2026-10-30
-EIX,Edison International,Utilities,59.37,3,CHoCH/SOS · Fase D,1,43.8,54.67,59.7,1.1,-10.34,True,3,7,"Técnico sí, fundamental débil",CHoCH (sin volumen),2025-10-24
-ELV,"Elevance Health, Inc.",Healthcare,425.62,4,LPS · Fase D,2,266.92,358.25,24.7,1.37,13.46,True,5,7,CANDIDATO ✓,LPS,2026-07-31
+EG,"Everest Group, Ltd.",Financial Services,411.11,5,Ruptura · Fase E (Etapa 2),2,297.16,348.76,37.7,2.22,15.56,True,6,7,CANDIDATO ✓,Ruptura sin CHoCH previo,2026-09-18
 EMR,Emerson Electric Company,Industrials,162.35,1,Rango · Fase B,2,121.73,164.31,34.7,1.32,9.47,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-08-07
-EQT,EQT Corporation,Energy,49.4,3,CHoCH/SOS · Fase D,1,43.63,59.94,24.7,0.95,-13.43,True,4,7,"Técnico sí, fundamental débil",CHoCH (sin volumen),2025-11-07
+EOG,"EOG Resources, Inc.",Energy,147.13,4,LPS · Fase D,3,98.46,133.2,32.2,1.51,10.48,True,7,7,CANDIDATO ✓,LPS,2026-10-02
+EQT,EQT Corporation,Energy,49.4,2,Spring/Test · Fase C,1,48.68,67.62,24.7,0.95,-13.43,True,4,7,No cumple,Test,2026-10-02
 ERIE,Erie Indemnity Company,Financial Services,273.07,1,Rango · Fase B,1,202.12,282.74,45.5,0.94,5.74,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-08-14
 ESS,"Essex Property Trust, Inc.",Real Estate,272.18,1,Rango · Fase B,3,230.19,296.07,16.0,0.8,1.03,True,3,7,No cumple,Rango detectado,2025-04-11
-ETN,"Eaton Corporation, PLC",Industrials,341.72,1,Rango · Fase B,1,309.33,405.06,47.4,0.61,-12.83,False,7,7,Vigilar: falta CHoCH,Rango detectado,2026-02-13
-EW,Edwards Lifesciences Corporatio,Healthcare,102.14,5,Ruptura · Fase E (Etapa 2),3,72.3,87.09,36.2,1.65,16.13,True,6,7,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
+ETN,"Eaton Corporation, PLC",Industrials,341.72,1,Rango · Fase B,1,309.33,394.01,47.4,0.61,-12.83,False,7,7,Vigilar: falta CHoCH,Rango detectado,2026-01-23
 EXC,Exelon Corporation,Utilities,45.62,1,Rango · Fase B,1,39.73,49.17,21.0,1.19,-1.2,True,3,7,No cumple,Rango detectado,2026-09-25
 EXE,Expand Energy Corporation,Energy,84.6,2,Spring/Test · Fase C,1,89.01,119.09,20.5,0.83,-17.07,True,6,7,Vigilar: falta CHoCH,Test,2026-10-16
 EXR,Extra Space Storage Inc,Real Estate,159.19,4,LPS · Fase D,3,122.39,146.54,25.0,1.62,11.87,True,4,7,"Técnico sí, fundamental débil",LPS,2026-05-15
@@ -80,7 +68,7 @@ FANG,"Diamondback Energy, Inc.",Energy,178.96,1,Rango · Fase B,1,169.17,216.9,2
 FAST,Fastenal Company,Industrials,52.99,5,Ruptura · Fase E (Etapa 2),3,38.15,49.3,29.4,1.67,12.8,True,7,7,CANDIDATO ✓,Ruptura Etapa 2,2026-10-16
 FERG,Ferguson Enterprises Inc.,Industrials,233.7,2,Spring/Test · Fase C,1,212.89,266.92,25.8,1.49,-3.78,True,3,5,No cumple,Test (vol bajo),2026-10-09
 FITB,Fifth Third Bancorp,Financial Services,53.04,1,Rango · Fase B,3,43.26,59.01,28.0,0.89,3.01,True,3,5,No cumple,Rango detectado,2026-09-18
-FRT,Federal Realty Investment Trust,Real Estate,112.58,3,CHoCH/SOS · Fase D,3,83.14,108.36,21.5,0.87,1.14,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2025-08-22
+FRT,Federal Realty Investment Trust,Real Estate,112.58,1,Rango · Fase B,3,86.33,107.54,21.5,0.87,1.14,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-03-06
 FTV,Fortive Corporation,Technology,65.37,5,Ruptura · Fase E (Etapa 2),3,45.2,62.3,27.4,1.29,9.78,True,6,7,CANDIDATO ✓,Ruptura sin CHoCH previo,2026-10-30
 GEHC,GE HealthCare Technologies Inc.,Healthcare,82.38,3,CHoCH/SOS · Fase D,1,59.74,79.49,46.2,1.54,10.57,True,7,7,CANDIDATO ✓,CHoCH (sin volumen),2026-10-30
 GILD,"Gilead Sciences, Inc.",Healthcare,166.89,4,LPS · Fase D,1,89.85,118.07,47.2,1.32,19.24,True,2,7,"Técnico sí, fundamental débil",LPS,2026-05-01
@@ -89,27 +77,25 @@ GPN,Global Payments Inc.,Industrials,97.4,5,Ruptura · Fase E (Etapa 2),2,64.68,
 HAS,"Hasbro, Inc.",Consumer Cyclical,118.91,5,Ruptura · Fase E (Etapa 2),2,74.63,101.25,66.2,1.29,28.45,True,6,7,CANDIDATO ✓,Ruptura sin CHoCH previo,2026-10-23
 HBAN,Huntington Bancshares Incorpora,Financial Services,15.47,1,Rango · Fase B,1,14.61,18.9,24.1,0.79,-8.56,True,3,5,No cumple,Rango detectado,2026-07-24
 HCA,"HCA Healthcare, Inc.",Healthcare,494.99,1,Rango · Fase B,1,353.34,478.86,47.6,1.31,6.34,True,4,5,No cumple,Rango detectado,2026-10-23
-HD,"Home Depot, Inc. (The)",Consumer Cyclical,343.47,1,Rango · Fase B,1,277.15,356.22,30.8,0.98,-0.43,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-10-16
-HON,Honeywell International Inc.,Industrials,220.05,1,Rango · Fase B,1,196.98,251.25,27.5,1.54,-5.15,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-10-02
-HRL,Hormel Foods Corporation,Consumer Defensive,21.95,3,CHoCH/SOS · Fase D,1,19.92,27.3,38.7,1.18,-4.38,True,4,7,"Técnico sí, fundamental débil",CHoCH (sin volumen),2026-02-20
-HSIC,"Henry Schein, Inc.",Healthcare,86.05,5,Ruptura · Fase E (Etapa 2),1,62.05,82.63,34.2,1.92,4.47,True,5,7,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
-HST,"Host Hotels & Resorts, Inc.",Real Estate,24.62,4,LPS · Fase D,2,12.61,16.97,29.8,1.63,17.17,True,5,7,CANDIDATO ✓,LPS,2025-10-31
+HD,"Home Depot, Inc. (The)",Consumer Cyclical,343.47,4,LPS · Fase D,1,284.85,389.18,30.8,0.98,-0.43,True,6,7,CANDIDATO ✓,LPS,2026-07-24
+HON,Honeywell International Inc.,Industrials,220.05,2,Spring/Test · Fase C,1,204.81,255.05,27.5,1.54,-5.15,True,5,7,Vigilar: falta CHoCH,Test (vol bajo),2026-10-09
+HRL,Hormel Foods Corporation,Consumer Defensive,21.95,2,Spring/Test · Fase C,1,19.17,26.03,38.7,1.18,-4.38,True,4,7,No cumple,Test,2026-10-16
+HSIC,"Henry Schein, Inc.",Healthcare,86.05,1,Rango · Fase B,1,68.7,92.18,34.2,1.92,4.47,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-08-28
 HSY,The Hershey Company,Consumer Defensive,178.08,2,Spring/Test · Fase C,1,166.46,221.46,27.1,0.94,-7.25,True,5,7,Vigilar: falta CHoCH,Test,2026-11-06
 HUBB,Hubbell Inc,Industrials,429.45,2,Spring/Test · Fase C,1,435.71,562.06,32.5,0.62,-12.47,False,6,7,Vigilar: falta CHoCH,Spring,2026-10-23
 ICE,Intercontinental Exchange Inc.,Financial Services,172.27,3,CHoCH/SOS · Fase D,1,121.39,169.13,46.6,0.98,7.76,True,7,7,CANDIDATO ✓,CHoCH (sin volumen),2026-10-30
 IDXX,"IDEXX Laboratories, Inc.",Healthcare,676.04,3,CHoCH/SOS · Fase D,1,523.38,726.41,42.6,1.39,9.2,True,7,7,CANDIDATO ✓,CHoCH + SOS,2026-08-07
 IFF,International Flavors & Fragran,Basic Materials,82.62,5,Ruptura · Fase E (Etapa 2),2,64.46,88.9,35.0,0.92,5.83,True,3,6,"Técnico sí, fundamental débil",Ruptura sin CHoCH previo,2026-10-30
-INVH,Invitation Homes Inc.,Real Estate,27.1,3,CHoCH/SOS · Fase D,1,24.46,30.94,18.3,0.81,-2.81,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-05-01
 IR,Ingersoll Rand Inc.,Industrials,82.99,1,Rango · Fase B,1,68.05,94.48,34.8,1.14,-0.61,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-08-28
 IRM,Iron Mountain Incorporated (Del,Real Estate,106.52,1,Rango · Fase B,1,103.44,133.64,29.2,0.97,-3.95,False,4,5,No cumple,Rango detectado,2026-11-06
 IVZ,Invesco Ltd,Financial Services,27.08,1,Rango · Fase B,3,21.51,29.62,32.4,0.64,-3.2,False,3,7,No cumple,Rango detectado,2026-07-10
-KDP,Keurig Dr Pepper Inc.,Consumer Defensive,36.63,5,Ruptura · Fase E (Etapa 2),2,25.53,34.52,35.9,2.07,21.19,True,6,7,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
+KDP,Keurig Dr Pepper Inc.,Consumer Defensive,36.63,5,Ruptura · Fase E (Etapa 2),2,24.53,33.58,35.9,2.07,21.19,True,6,7,CANDIDATO ✓,Ruptura sin CHoCH previo,2026-11-06
 KEY,KeyCorp,Financial Services,20.85,3,CHoCH/SOS · Fase D,3,13.54,18.64,22.6,0.95,-2.81,True,4,5,"Técnico sí, fundamental débil",CHoCH (sin volumen),2026-06-12
 KHC,The Kraft Heinz Company,Consumer Defensive,24.61,4,LPS · Fase D,3,20.9,26.92,27.9,1.02,2.37,True,2,7,"Técnico sí, fundamental débil",LPS,2026-08-14
 KKR,KKR & Co. Inc.,Financial Services,96.48,2,Spring/Test · Fase C,1,84.51,116.57,38.4,1.07,-9.82,True,5,6,Vigilar: falta CHoCH,Shakeout,2026-10-16
 KMB,Kimberly-Clark Corporation,Consumer Defensive,108.43,2,Spring/Test · Fase C,1,92.69,125.12,26.9,1.51,4.29,True,5,7,Vigilar: falta CHoCH,Test,2026-06-05
 KMI,"Kinder Morgan, Inc.",Energy,29.96,5,Ruptura · Fase E (Etapa 2),3,22.33,29.06,18.1,1.33,-4.66,False,5,7,CANDIDATO ✓,Ruptura Etapa 2,2026-10-23
-KR,Kroger Company (The),Consumer Defensive,67.7,3,CHoCH/SOS · Fase D,1,57.61,72.87,33.2,1.98,3.48,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-02-13
+KR,Kroger Company (The),Consumer Defensive,67.7,3,CHoCH/SOS · Fase D,1,53.78,74.59,33.2,1.98,3.48,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-10-16
 LEN,Lennar Corporation,Consumer Cyclical,88.74,1,Rango · Fase B,1,71.78,94.84,32.7,0.8,-9.51,True,4,7,No cumple,Rango detectado,2026-10-30
 LLY,Eli Lilly and Company,Healthcare,1354.0,4,LPS · Fase D,2,847.83,1128.5,54.5,1.84,21.06,True,6,7,CANDIDATO ✓,LPS,2026-09-11
 LMT,Lockheed Martin Corporation,Industrials,567.08,1,Rango · Fase B,1,484.16,667.55,35.7,1.24,0.23,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-09-04
@@ -117,59 +103,56 @@ LOW,"Lowe's Companies, Inc.",Consumer Cyclical,224.55,3,CHoCH/SOS · Fase D,1,17
 LYV,"Live Nation Entertainment, Inc.",Communication Services,175.25,4,LPS · Fase D,3,125.34,175.25,19.8,0.9,5.69,True,5,7,CANDIDATO ✓,LPS,2026-06-12
 MA,Mastercard Incorporated,Financial Services,652.7,3,CHoCH/SOS · Fase D,2,460.65,597.14,47.3,1.27,17.42,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-07-03
 MAA,Mid-America Apartment Communiti,Real Estate,118.93,3,CHoCH/SOS · Fase D,1,115.93,133.61,25.3,0.72,-8.63,True,3,7,"Técnico sí, fundamental débil",CHoCH (sin volumen),2026-06-05
-MAS,Masco Corporation,Industrials,82.22,4,LPS · Fase D,2,54.79,76.38,40.2,1.34,15.54,True,4,5,"Técnico sí, fundamental débil",LPS,2026-05-22
+MAS,Masco Corporation,Industrials,82.22,3,CHoCH/SOS · Fase D,2,57.29,77.84,40.2,1.34,15.54,True,4,5,"Técnico sí, fundamental débil",CHoCH (sin volumen),2026-06-26
 MCK,McKesson Corporation,Healthcare,1060.84,1,Rango · Fase B,1,722.11,996.84,55.3,1.79,19.74,True,5,5,Vigilar: falta CHoCH,Rango detectado,2026-08-07
 MCO,Moody's Corporation,Financial Services,505.67,4,LPS · Fase D,1,374.05,518.43,25.3,1.06,3.99,True,5,7,CANDIDATO ✓,LPS,2026-05-15
-MDLZ,"Mondelez International, Inc.",Consumer Defensive,66.02,4,LPS · Fase D,3,52.88,70.84,20.0,1.4,9.47,True,6,7,CANDIDATO ✓,LPS,2026-03-13
+MDLZ,"Mondelez International, Inc.",Consumer Defensive,66.02,4,LPS · Fase D,3,49.9,62.22,20.0,1.4,9.47,True,6,7,CANDIDATO ✓,LPS,2026-10-09
 MDT,Medtronic plc.,Healthcare,101.8,3,CHoCH/SOS · Fase D,1,74.62,102.92,47.4,2.71,10.96,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-07-03
-META,"Meta Platforms, Inc.",Communication Services,610.15,3,CHoCH/SOS · Fase D,1,579.28,793.02,48.8,0.73,-5.8,False,7,7,CANDIDATO ✓,CHoCH + SOS,2026-01-30
+META,"Meta Platforms, Inc.",Communication Services,610.15,5,Ruptura · Fase E (Etapa 2),1,519.37,690.33,48.8,0.73,-5.8,False,7,7,CANDIDATO ✓,Ruptura sin CHoCH previo,2026-09-25
 MKC,"McCormick & Company, Incorporat",Consumer Defensive,48.4,1,Rango · Fase B,1,42.79,56.27,31.5,0.93,-14.36,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-10-30
 MLM,"Martin Marietta Materials, Inc.",Basic Materials,518.15,1,Rango · Fase B,1,464.92,641.14,37.9,0.43,-14.07,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-10-30
 MMM,3M Company,Industrials,185.15,1,Rango · Fase B,3,138.02,184.09,40.0,2.7,11.63,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-08-14
 MRSH,Marsh,Financial Services,204.82,3,CHoCH/SOS · Fase D,1,156.36,190.14,38.2,1.34,12.32,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-07-31
-MSCI,MSCI Inc.,Financial Services,641.01,4,LPS · Fase D,3,425.89,595.99,27.7,1.0,9.2,True,5,5,CANDIDATO ✓,LPS,2024-09-20
-MSI,"Motorola Solutions, Inc.",Technology,514.51,5,Ruptura · Fase E (Etapa 2),1,361.21,485.47,42.5,1.87,17.17,True,5,7,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
-MTB,M&T Bank Corporation,Financial Services,217.75,4,LPS · Fase D,3,144.39,200.89,27.1,0.99,-2.62,True,3,5,"Técnico sí, fundamental débil",LPS,2025-08-01
+MSCI,MSCI Inc.,Financial Services,641.01,1,Rango · Fase B,3,495.54,637.99,27.7,1.0,9.2,True,5,5,Vigilar: falta CHoCH,Rango detectado,2026-05-29
+MSI,"Motorola Solutions, Inc.",Technology,514.51,5,Ruptura · Fase E (Etapa 2),1,373.42,486.23,42.5,1.87,17.17,True,5,7,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
+MTB,M&T Bank Corporation,Financial Services,217.75,4,LPS · Fase D,3,169.89,234.19,27.1,0.99,-2.62,True,3,5,"Técnico sí, fundamental débil",LPS,2026-10-02
 MTD,"Mettler-Toledo International, I",Healthcare,1722.15,5,Ruptura · Fase E (Etapa 2),2,946.69,1324.52,76.6,2.18,23.32,True,5,6,CANDIDATO ✓,Ruptura Etapa 2,2026-09-18
-NDAQ,"Nasdaq, Inc.",Financial Services,107.12,3,CHoCH/SOS · Fase D,2,76.31,100.77,46.1,2.31,14.51,True,7,7,CANDIDATO ✓,CHoCH (sin volumen),2026-05-01
 NEE,"NextEra Energy, Inc.",Utilities,86.95,1,Rango · Fase B,1,74.41,97.3,26.9,1.09,-1.28,True,4,7,No cumple,Rango detectado,2026-10-02
 NI,NiSource Inc,Utilities,44.15,1,Rango · Fase B,1,38.16,48.55,27.2,0.93,-2.18,True,4,7,No cumple,Rango detectado,2026-10-09
 NVDA,NVIDIA Corporation,Technology,186.64,1,Rango · Fase B,3,163.9,216.34,34.1,1.0,-8.6,False,7,7,Vigilar: falta CHoCH,Rango detectado,2026-05-01
 NVR,"NVR, Inc.",Consumer Cyclical,6298.29,1,Rango · Fase B,1,5501.01,7663.17,26.5,1.28,-8.94,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-08-21
-NWS,News Corporation,Communication Services,28.96,4,LPS · Fase D,1,25.99,35.23,28.7,0.81,-6.33,False,6,7,CANDIDATO ✓,LPS,2026-10-02
-NWSA,News Corporation,Communication Services,26.39,4,LPS · Fase D,1,23.13,30.24,30.0,1.36,-3.31,False,6,7,CANDIDATO ✓,LPS,2026-10-02
-O,Realty Income Corporation,Real Estate,59.04,4,LPS · Fase D,3,41.95,51.15,24.6,0.79,-3.22,True,6,7,CANDIDATO ✓,LPS,2025-12-26
+NWS,News Corporation,Communication Services,28.96,4,LPS · Fase D,1,25.32,31.25,28.7,0.81,-6.33,False,6,7,CANDIDATO ✓,LPS,2026-10-02
+NWSA,News Corporation,Communication Services,26.39,4,LPS · Fase D,1,22.03,27.01,30.0,1.36,-3.31,False,6,7,CANDIDATO ✓,LPS,2026-10-02
 OMC,Omnicom Group Inc.,Communication Services,86.37,3,CHoCH/SOS · Fase D,3,65.06,83.43,30.0,0.88,9.43,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-07-10
 ORLY,"O'Reilly Automotive, Inc.",Consumer Cyclical,89.89,3,CHoCH/SOS · Fase D,1,86.77,105.23,14.0,1.12,-4.74,True,5,5,CANDIDATO ✓,CHoCH (sin volumen),2026-08-07
 OTIS,Otis Worldwide Corporation,Industrials,78.96,3,CHoCH/SOS · Fase D,1,63.58,77.76,27.7,0.93,-1.92,True,5,5,CANDIDATO ✓,CHoCH (sin volumen),2026-10-30
 OXY,Occidental Petroleum Corporatio,Energy,56.38,1,Rango · Fase B,1,47.55,63.77,36.6,0.96,3.47,False,6,7,Vigilar: falta CHoCH,Rango detectado,2026-10-02
 PAYX,"Paychex, Inc.",Technology,117.06,1,Rango · Fase B,2,82.65,112.8,47.9,1.78,10.78,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-06-12
-PEG,Public Service Enterprise Group,Utilities,72.61,1,Rango · Fase B,1,66.15,82.94,25.4,0.92,-8.92,True,2,7,No cumple,Rango detectado,2026-10-09
+PCAR,PACCAR Inc.,Industrials,101.98,1,Rango · Fase B,1,100.07,138.87,38.8,1.14,-15.33,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-10-30
+PEG,Public Service Enterprise Group,Utilities,72.61,2,Spring/Test · Fase C,1,69.72,82.99,25.4,0.92,-8.92,True,2,7,No cumple,Test,2026-10-16
 PEP,"Pepsico, Inc.",Consumer Defensive,141.34,1,Rango · Fase B,1,123.47,156.66,22.7,0.8,-4.48,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-10-23
 PFE,"Pfizer, Inc.",Healthcare,29.39,4,LPS · Fase D,3,21.28,25.5,35.4,1.27,11.34,True,4,7,"Técnico sí, fundamental débil",LPS,2026-10-09
-PG,Procter & Gamble Company (The),Consumer Defensive,165.4,4,LPS · Fase D,3,134.24,156.02,24.5,1.51,9.67,True,6,7,CANDIDATO ✓,LPS,2026-04-10
 PGR,Progressive Corporation (The),Financial Services,227.77,3,CHoCH/SOS · Fase D,1,189.02,239.26,27.5,1.21,5.27,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-10-23
 PH,Parker-Hannifin Corporation,Industrials,917.79,1,Rango · Fase B,1,813.37,1097.73,35.0,0.96,-4.2,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-08-21
-PHM,"PulteGroup, Inc.",Consumer Cyclical,132.49,3,CHoCH/SOS · Fase D,1,87.0,119.58,30.5,1.44,3.96,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-01-09
-PKG,Packaging Corporation of Americ,Consumer Cyclical,249.7,5,Ruptura · Fase E (Etapa 2),3,166.39,232.27,31.1,1.27,8.76,True,7,7,CANDIDATO ✓,Ruptura Etapa 2,2026-10-23
-PM,Philip Morris International Inc,Consumer Defensive,197.88,4,LPS · Fase D,2,137.25,177.3,28.2,1.16,10.12,True,4,5,"Técnico sí, fundamental débil",LPS,2026-04-03
-PPG,"PPG Industries, Inc.",Basic Materials,122.38,4,LPS · Fase D,1,93.79,125.74,29.7,1.22,8.18,True,7,7,CANDIDATO ✓,LPS,2026-05-22
+PHM,"PulteGroup, Inc.",Consumer Cyclical,132.49,2,Spring/Test · Fase C,1,108.02,143.57,30.5,1.44,3.96,True,5,7,Vigilar: falta CHoCH,Spring,2026-10-16
+PKG,Packaging Corporation of Americ,Consumer Cyclical,249.7,5,Ruptura · Fase E (Etapa 2),3,186.77,244.84,31.1,1.27,8.76,True,7,7,CANDIDATO ✓,Ruptura Etapa 2,2026-10-23
+PPG,"PPG Industries, Inc.",Basic Materials,122.38,3,CHoCH/SOS · Fase D,1,91.35,113.54,29.7,1.22,8.18,True,7,7,CANDIDATO ✓,CHoCH (sin volumen),2026-06-12
 PPL,PPL Corporation,Utilities,35.8,1,Rango · Fase B,1,31.56,38.84,17.4,1.38,-2.06,True,4,7,No cumple,Rango detectado,2026-10-16
-PRU,"Prudential Financial, Inc.",Financial Services,119.24,4,LPS · Fase D,2,88.64,119.42,32.1,2.16,8.12,True,3,7,"Técnico sí, fundamental débil",LPS,2025-10-10
+PRU,"Prudential Financial, Inc.",Financial Services,119.24,4,LPS · Fase D,2,89.62,115.24,32.1,2.16,8.12,True,3,7,"Técnico sí, fundamental débil",LPS,2026-10-02
 REGN,"Regeneron Pharmaceuticals, Inc.",Healthcare,904.35,5,Ruptura · Fase E (Etapa 2),1,473.34,662.07,67.9,1.29,18.02,True,7,7,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
 RF,Regions Financial Corporation,Financial Services,28.31,3,CHoCH/SOS · Fase D,3,19.33,26.54,25.3,1.35,-1.04,True,5,5,CANDIDATO ✓,CHoCH (sin volumen),2026-06-05
-RJF,"Raymond James Financial, Inc.",Financial Services,162.81,3,CHoCH/SOS · Fase D,3,126.87,174.67,30.0,1.01,-0.5,True,6,6,CANDIDATO ✓,CHoCH (sin volumen),2026-01-09
+RJF,"Raymond James Financial, Inc.",Financial Services,162.81,1,Rango · Fase B,3,137.85,172.28,30.0,1.01,-0.5,True,6,6,Vigilar: falta CHoCH,Rango detectado,2026-07-24
 RMD,ResMed Inc.,Healthcare,235.3,3,CHoCH/SOS · Fase D,1,179.75,242.4,42.2,1.27,-0.04,True,7,7,CANDIDATO ✓,CHoCH (sin volumen),2026-09-18
 ROP,"Roper Technologies, Inc.",Technology,476.6,5,Ruptura · Fase E (Etapa 2),2,304.43,409.23,66.6,1.7,21.5,True,7,7,CANDIDATO ✓,Ruptura sin CHoCH previo,2026-10-30
 RSG,"Republic Services, Inc.",Industrials,246.85,4,LPS · Fase D,1,199.03,254.37,30.3,2.14,11.04,True,6,7,CANDIDATO ✓,LPS,2026-08-07
 RTX,RTX Corporation,Industrials,189.53,1,Rango · Fase B,1,169.51,226.41,33.6,1.45,-3.84,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-09-04
-SBAC,SBA Communications Corporation,Real Estate,189.42,1,Rango · Fase B,1,156.6,218.7,38.9,0.98,-3.01,True,3,5,No cumple,Rango detectado,2026-10-30
+SBAC,SBA Communications Corporation,Real Estate,189.42,2,Spring/Test · Fase C,1,160.33,221.58,38.9,0.98,-3.01,True,3,5,No cumple,Spring,2026-10-09
+SBUX,Starbucks Corporation,Consumer Cyclical,105.41,1,Rango · Fase B,3,84.62,109.88,27.6,0.99,6.18,True,4,5,No cumple,Rango detectado,2026-08-21
 SCHW,Charles Schwab Corporation (The,Financial Services,91.49,1,Rango · Fase B,1,83.72,106.44,36.8,0.9,-8.0,True,5,6,Vigilar: falta CHoCH,Rango detectado,2026-07-24
-SHW,Sherwin-Williams Company (The),Basic Materials,344.1,4,LPS · Fase D,1,304.61,394.07,28.4,1.09,0.52,True,6,7,CANDIDATO ✓,LPS,2026-10-09
-SJM,The J.M. Smucker Company,Consumer Defensive,130.55,4,LPS · Fase D,2,88.73,114.42,41.5,2.93,17.13,True,4,6,"Técnico sí, fundamental débil",LPS,2026-10-02
+SHW,Sherwin-Williams Company (The),Basic Materials,344.1,4,LPS · Fase D,1,300.11,375.09,28.4,1.09,0.52,True,6,7,CANDIDATO ✓,LPS,2026-07-24
 SLB,SLB Limited,Energy,49.92,1,Rango · Fase B,1,44.36,60.15,35.6,1.27,-0.27,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-10-23
 SOLV,Solventum Corporation,Healthcare,90.38,5,Ruptura · Fase E (Etapa 2),2,60.7,78.86,29.7,1.06,11.22,True,3,6,"Técnico sí, fundamental débil",Ruptura sin CHoCH previo,2026-11-06
-SPGI,S&P Global Inc.,Financial Services,467.8,4,LPS · Fase D,1,399.1,542.05,31.0,1.04,5.71,True,7,7,CANDIDATO ✓,LPS,2026-08-07
+SPGI,S&P Global Inc.,Financial Services,467.8,3,CHoCH/SOS · Fase D,1,358.55,499.33,31.0,1.04,5.71,True,7,7,CANDIDATO ✓,CHoCH (sin volumen),2026-10-30
 SRE,DBA Sempra,Utilities,78.17,1,Rango · Fase B,1,76.21,99.49,24.9,0.78,-14.09,True,4,7,No cumple,Rango detectado,2026-10-02
 STE,STERIS plc (Ireland),Healthcare,252.3,4,LPS · Fase D,1,193.97,267.14,31.3,1.23,6.14,True,6,7,CANDIDATO ✓,LPS,2026-09-25
 STZ,"Constellation Brands, Inc.",Consumer Defensive,141.97,3,CHoCH/SOS · Fase D,1,109.73,150.74,36.4,0.8,-1.18,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-11-06
@@ -183,30 +166,27 @@ TFC,Truist Financial Corporation,Financial Services,49.38,3,CHoCH/SOS · Fase D,
 TJX,"TJX Companies, Inc. (The)",Consumer Cyclical,135.3,2,Spring/Test · Fase C,1,124.87,169.47,38.0,0.87,-12.97,True,6,7,Vigilar: falta CHoCH,Shakeout,2026-09-18
 TKO,"TKO Group Holdings, Inc.",Communication Services,191.0,2,Spring/Test · Fase C,1,177.77,223.64,28.1,0.99,-4.04,True,6,7,Vigilar: falta CHoCH,Test (vol bajo),2026-10-30
 TMO,Thermo Fisher Scientific Inc,Healthcare,694.76,1,Rango · Fase B,2,434.5,588.11,63.9,1.52,21.18,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-07-31
-TRGP,"Targa Resources, Inc.",Energy,264.59,5,Ruptura · Fase E (Etapa 2),3,144.56,200.56,28.6,1.68,6.42,False,6,7,CANDIDATO ✓,Ruptura Etapa 2,2026-08-21
-TROW,"T. Rowe Price Group, Inc.",Financial Services,108.41,4,LPS · Fase D,3,77.78,108.05,22.9,0.95,4.16,True,6,7,CANDIDATO ✓,LPS,2025-06-06
+TROW,"T. Rowe Price Group, Inc.",Financial Services,108.41,3,CHoCH/SOS · Fase D,3,79.88,110.96,22.9,0.95,4.16,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-06-12
 TSN,"Tyson Foods, Inc.",Consumer Defensive,59.68,3,CHoCH/SOS · Fase D,1,49.64,61.07,35.5,1.03,-0.79,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-05-08
-TT,Trane Technologies plc,Industrials,401.76,4,LPS · Fase D,1,345.62,471.77,28.9,0.75,-11.36,False,7,7,CANDIDATO ✓,LPS,2026-04-03
+TT,Trane Technologies plc,Industrials,401.76,1,Rango · Fase B,1,391.53,504.68,28.9,0.75,-11.36,False,7,7,Vigilar: falta CHoCH,Rango detectado,2026-11-06
 TTWO,"Take-Two Interactive Software, ",Communication Services,214.87,4,LPS · Fase D,1,189.45,264.79,44.6,0.59,-6.68,True,2,6,"Técnico sí, fundamental débil",LPS,2026-06-12
 TXT,Textron Inc.,Industrials,83.54,1,Rango · Fase B,1,71.87,97.56,35.4,0.92,-8.03,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-10-23
 UBER,"Uber Technologies, Inc.",Technology,68.59,3,CHoCH/SOS · Fase D,1,67.19,85.61,28.6,0.8,-11.74,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-08-21
-UDR,"UDR, Inc.",Real Estate,36.58,3,CHoCH/SOS · Fase D,3,34.03,43.2,25.4,0.91,-1.01,True,5,7,CANDIDATO ✓,CHoCH (sin volumen),2026-01-16
+UDR,"UDR, Inc.",Real Estate,36.58,1,Rango · Fase B,3,32.55,41.34,25.4,0.91,-1.01,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-07-31
 UHS,"Universal Health Services, Inc.",Healthcare,195.5,1,Rango · Fase B,1,139.92,190.55,46.3,1.07,1.76,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-10-16
 ULTA,"Ulta Beauty, Inc.",Consumer Cyclical,644.76,1,Rango · Fase B,1,443.6,615.0,51.9,1.09,11.26,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-10-16
-UPS,"United Parcel Service, Inc.",Industrials,108.3,4,LPS · Fase D,1,76.95,98.05,27.3,1.26,3.79,True,5,7,CANDIDATO ✓,LPS,2026-03-27
-URI,"United Rentals, Inc.",Industrials,1055.57,2,Spring/Test · Fase C,2,752.74,1013.2,32.2,1.23,8.8,True,6,7,Vigilar: falta CHoCH,Spring (vol bajo),2026-04-10
+UPS,"United Parcel Service, Inc.",Industrials,108.3,1,Rango · Fase B,1,91.56,116.56,27.3,1.26,3.79,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-10-30
 V,Visa Inc.,Financial Services,422.65,4,LPS · Fase D,2,295.87,356.48,43.4,1.66,20.17,True,7,7,CANDIDATO ✓,LPS,2026-10-02
 VICI,VICI Properties Inc.,Real Estate,24.79,2,Spring/Test · Fase C,1,22.54,28.48,25.1,0.8,-8.65,True,5,7,Vigilar: falta CHoCH,Spring,2026-10-09
 VLTO,Veralto Corp,Industrials,117.09,5,Ruptura · Fase E (Etapa 2),2,79.8,102.97,49.1,2.29,20.22,True,7,7,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
-VMC,Vulcan Materials Company (Holdi,Basic Materials,282.72,4,LPS · Fase D,1,215.86,294.42,35.2,0.89,-3.0,True,5,7,CANDIDATO ✓,LPS,2026-05-22
-VMRK,Vivmark Residential,Real Estate,65.51,3,CHoCH/SOS · Fase D,3,55.61,71.92,20.5,1.01,2.65,True,2,5,"Técnico sí, fundamental débil",CHoCH (sin volumen),2026-02-06
+VMC,Vulcan Materials Company (Holdi,Basic Materials,282.72,2,Spring/Test · Fase C,1,251.38,329.2,35.2,0.89,-3.0,True,5,7,Vigilar: falta CHoCH,Test,2026-10-16
+VMRK,Vivmark Residential,Real Estate,65.51,1,Rango · Fase B,3,55.63,70.66,20.5,1.01,2.65,True,2,5,No cumple,Rango detectado,2026-08-21
 VRSN,"VeriSign, Inc.",Technology,308.67,5,Ruptura · Fase E (Etapa 2),2,222.64,305.89,33.0,1.85,12.71,True,5,5,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
-VRTX,Vertex Pharmaceuticals Incorpor,Healthcare,547.09,5,Ruptura · Fase E (Etapa 2),3,377.85,519.88,35.4,1.23,12.07,True,6,7,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
+VRTX,Vertex Pharmaceuticals Incorpor,Healthcare,547.09,5,Ruptura · Fase E (Etapa 2),3,412.27,507.92,35.4,1.23,12.07,True,6,7,CANDIDATO ✓,Ruptura Etapa 2,2026-11-06
 VST,Vistra Corp.,Utilities,124.8,3,CHoCH/SOS · Fase D,1,132.26,181.76,54.3,0.6,-21.94,False,4,5,"Técnico sí, fundamental débil",CHoCH + SOS,2026-10-09
-WAT,Waters Corporation,Healthcare,457.6,5,Ruptura · Fase E (Etapa 2),2,275.05,368.02,48.9,1.51,19.11,True,4,6,"Técnico sí, fundamental débil",Ruptura Etapa 2,2026-11-06
+WAT,Waters Corporation,Healthcare,457.6,5,Ruptura · Fase E (Etapa 2),2,282.77,391.87,48.9,1.51,19.11,True,4,6,"Técnico sí, fundamental débil",Ruptura Etapa 2,2026-11-06
 WFC,Wells Fargo & Company,Financial Services,83.94,4,LPS · Fase D,1,71.94,95.61,27.1,2.21,-2.57,True,4,5,"Técnico sí, fundamental débil",LPS,2026-07-31
 WMT,Walmart Inc.,Consumer Defensive,125.52,3,CHoCH/SOS · Fase D,1,106.53,134.84,32.0,1.34,4.01,True,6,7,CANDIDATO ✓,CHoCH (sin volumen),2026-10-16
-WSM,"Williams-Sonoma, Inc.",Consumer Cyclical,254.06,4,LPS · Fase D,2,150.92,207.04,66.9,1.71,18.68,True,7,7,CANDIDATO ✓,LPS,2026-07-17
 XOM,ExxonMobil Holdings Corporation,Energy,165.87,1,Rango · Fase B,1,134.08,174.09,40.6,1.13,9.96,True,7,7,Vigilar: falta CHoCH,Rango detectado,2026-09-25
 XYL,Xylem Inc.,Industrials,97.83,1,Rango · Fase B,1,98.49,131.22,44.9,1.18,-21.19,True,5,7,Vigilar: falta CHoCH,Rango detectado,2025-04-18
 ZBH,"Zimmer Biomet Holdings, Inc.",Healthcare,105.59,5,Ruptura · Fase E (Etapa 2),1,78.7,100.68,43.0,1.81,12.1,True,4,7,"Técnico sí, fundamental débil",Ruptura Etapa 2,2026-11-06
