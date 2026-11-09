@@ -1,0 +1,5 @@
+# Acciones extra para analizar además del S&P 500 y Nasdaq-100.
+# Un ticker por línea (formato Yahoo Finance). Lo que va después de # se ignora.
+# Ejemplos: acciones fuera de los índices, ADRs o chilenas en Yahoo (terminan en .SN)
+# SQM
+# CHILE.SN

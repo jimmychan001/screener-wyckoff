@@ -1,0 +1,31 @@
+{
+  "universe": ["sp500", "nasdaq100"],
+  "benchmark": "SPY",
+  "technical": {
+    "min_weeks": 110,
+    "ma_len": 30,
+    "slope_lb": 5,
+    "flat_pct": 3.0,
+    "range_len": 26,
+    "max_width": 40.0,
+    "prior_len": 52,
+    "min_decline": 20.0,
+    "break_tol": 3.0,
+    "piv": 3,
+    "vol_len": 20,
+    "vol_mult": 1.5,
+    "rs_len": 52,
+    "rs_lb": 4,
+    "post_bars": 12
+  },
+  "fundamentals": {
+    "min_rev_growth": 5.0,
+    "min_eps_growth": 0.0,
+    "min_roe": 12.0,
+    "max_de": 1.0,
+    "min_score": 5
+  },
+  "report": {
+    "recent_event_days": 7
+  }
+}
