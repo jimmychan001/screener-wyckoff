@@ -1,0 +1,15 @@
+Señales nuevas con fundamentales aptos:
+
+- **CPAY** (Corpay, Inc.): Ruptura sin CHoCH previo el 2026-11-06 a 455.16 · fund. 6/7
+- **EW** (Edwards Lifesciences Corporatio): Ruptura Etapa 2 el 2026-11-06 a 102.14 · fund. 6/7
+- **HSIC** (Henry Schein, Inc.): Ruptura Etapa 2 el 2026-11-06 a 86.05 · fund. 5/7
+- **KDP** (Keurig Dr Pepper Inc.): Ruptura Etapa 2 el 2026-11-06 a 36.63 · fund. 6/7
+- **LOW** (Lowe's Companies, Inc.): CHoCH (sin volumen) el 2026-11-06 a 224.55 · fund. 5/5
+- **MSI** (Motorola Solutions, Inc.): Ruptura Etapa 2 el 2026-11-06 a 514.51 · fund. 5/7
+- **REGN** (Regeneron Pharmaceuticals, Inc.): Ruptura Etapa 2 el 2026-11-06 a 904.35 · fund. 7/7
+- **STZ** (Constellation Brands, Inc.): CHoCH (sin volumen) el 2026-11-06 a 141.97 · fund. 6/7
+- **VLTO** (Veralto Corp): Ruptura Etapa 2 el 2026-11-06 a 117.09 · fund. 7/7
+- **VRSN** (VeriSign, Inc.): Ruptura Etapa 2 el 2026-11-06 a 308.67 · fund. 5/5
+- **VRTX** (Vertex Pharmaceuticals Incorpor): Ruptura Etapa 2 el 2026-11-06 a 547.09 · fund. 6/7
+
+Reporte completo: reports/latest.md
