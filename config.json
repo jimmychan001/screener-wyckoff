@@ -16,7 +16,8 @@
     "vol_mult": 1.5,
     "rs_len": 52,
     "rs_lb": 4,
-    "post_bars": 12
+    "post_bars": 12,
+    "max_phase_age": 26
   },
   "fundamentals": {
     "min_rev_growth": 5.0,

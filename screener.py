@@ -180,6 +180,7 @@ def analyze(ticker: str, w: pd.DataFrame, bench_w: pd.Series, p: dict) -> TechRe
 
     # máquina de estados (idéntica al indicador de TradingView)
     phase, r_top, r_bot, choch_bar, event_bar = 0, np.nan, np.nan, -1, -1
+    last_evt = -1  # última barra con Spring/CHoCH/LPS (para vencer estructuras viejas)
     ph1 = ph0 = pl1 = pl0 = np.nan
     events: list = []
     idx = o.index
@@ -204,15 +205,15 @@ def analyze(ticker: str, w: pd.DataFrame, bench_w: pd.Series, p: dict) -> TechRe
             if phase <= 2 and Lw[i] < r_bot and C[i] > r_bot:
                 name = ("Shakeout" if HV[i] else "Spring") if phase == 1 else "Test"
                 events.append((d, name + (" (vol bajo)" if LV[i] else ""), round(float(Lw[i]), 2)))
-                phase = 2
+                phase, last_evt = 2, i
             if phase in (1, 2) and choch and C[i] > r_bot:
                 choch_bar = i
                 events.append((d, "CHoCH + SOS" if HV[i] else "CHoCH (sin volumen)", round(float(C[i]), 2)))
-                phase = 3
+                phase, last_evt = 3, i
             if (phase == 3 and not np.isnan(pl[i]) and (i - R) > choch_bar and pl[i] > r_bot
                     and (np.isnan(pl0) or pl[i] > pl0) and V[i - R] < AV[i - R]):
                 events.append((idx[i - R].date(), "LPS", round(float(pl[i]), 2)))
-                phase = 4
+                phase, last_evt = 4, i
             if C[i] > r_top and HV[i] and C[i] > MA[i]:
                 events.append((d, "Ruptura Etapa 2" if phase >= 3 else "Ruptura sin CHoCH previo", round(float(C[i]), 2)))
                 phase, event_bar, bo_now = 5, i, True
@@ -220,6 +221,9 @@ def analyze(ticker: str, w: pd.DataFrame, bench_w: pd.Series, p: dict) -> TechRe
             if phase < 5 and C[i] < r_bot * tol and C[i - 1] < r_bot * tol:
                 events.append((d, "Rango roto ↓", round(float(C[i]), 2)))
                 phase = 0
+        if phase in (2, 3, 4) and i - last_evt > p["max_phase_age"]:
+            events.append((d, "Estructura vencida (sin avance)", round(float(C[i]), 2)))
+            phase = 0
         if phase == 5 and not bo_now and (C[i] < r_bot or i - event_bar > p["post_bars"]):
             phase = 0
 
