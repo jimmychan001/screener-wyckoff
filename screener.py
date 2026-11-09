@@ -229,12 +229,16 @@ def analyze(ticker: str, w: pd.DataFrame, bench_w: pd.Series, p: dict) -> TechRe
 
     s = float(slope.iloc[-1])
     last = float(c.iloc[-1])
-    if last > ma.iloc[-1] and s > p["flat_pct"]:
+    # Etapa estimada: una ruptura de rango sobre una media que sube suave también es Etapa 2
+    # (reacumulación resuelta al alza), no solo la media con pendiente fuerte.
+    if last > ma.iloc[-1] and (s > p["flat_pct"] or (s > 0 and phase == 5)):
         stage = 2
     elif last < ma.iloc[-1] and s < -p["flat_pct"]:
         stage = 4
+    elif abs(s) <= p["flat_pct"] and bool(decline_ok.iloc[-1]):
+        stage = 1
     else:
-        stage = 1 if bool(decline_ok.iloc[-1]) else 3
+        stage = 3
 
     mrs_now = float(mrs.iloc[-1]) if not np.isnan(mrs.iloc[-1]) else np.nan
     mrs_prev = mrs.iloc[-1 - p["rs_lb"]] if len(mrs) > p["rs_lb"] else np.nan
