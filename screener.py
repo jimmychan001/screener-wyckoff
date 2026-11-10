@@ -218,6 +218,12 @@ def analyze(ticker: str, w: pd.DataFrame, bench_w: pd.Series, p: dict) -> TechRe
                 events.append((d, "Ruptura Etapa 2" if phase >= 3 else "Ruptura sin CHoCH previo", round(float(C[i]), 2)))
                 phase, event_bar, bo_now = 5, i, True
             tol = 1 - p["break_tol"] / 100
+            # Salida por arriba SIN volumen: dos cierres seguidos sobre el techo (+ tolerancia).
+            # Antes la acción quedaba "pegada" en Fase B aunque ya cotizara muy sobre el rango.
+            up_tol = 1 + p["break_tol"] / 100
+            if phase < 5 and C[i] > r_top * up_tol and C[i - 1] > r_top * up_tol:
+                events.append((d, "Salió del rango ↑ (sin volumen de ruptura)", round(float(C[i]), 2)))
+                phase, event_bar, bo_now = 5, i, True
             if phase < 5 and C[i] < r_bot * tol and C[i - 1] < r_bot * tol:
                 events.append((d, "Rango roto ↓", round(float(C[i]), 2)))
                 phase = 0
@@ -400,6 +406,121 @@ def build_report(rows: list[tuple[TechResult, dict]], n_scanned: int, today: dt.
     return "\n".join(lines), fresh_signals
 
 
+# ───────────────────────────── SEGUIMIENTO MANUAL ─────────────────────────────
+# Niveles de decisión de los análisis hechos a mano (seguimiento.csv).
+# Cada día se revisa el cierre y se avisa cuando el precio cruza un nivel.
+SEG_FILE = ROOT / "seguimiento.csv"
+SEG_LEVELS = [
+    ("alcista_sobre", "above", "🟢 cerró SOBRE el nivel alcista"),
+    ("bajista_bajo", "below", "🔴 cerró BAJO el nivel bajista"),
+    ("invalida_bajo", "below", "❌ cerró BAJO el nivel de invalidación"),
+]
+
+
+def load_seguimiento() -> pd.DataFrame:
+    if not SEG_FILE.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(SEG_FILE, comment="#", dtype=str, skipinitialspace=True).fillna("")
+    df.columns = [c.strip().lower() for c in df.columns]
+    if "ticker" not in df.columns:
+        print("[aviso] seguimiento.csv no tiene columna 'ticker'")
+        return pd.DataFrame()
+    df["ticker"] = df["ticker"].str.strip().str.upper()
+    df = df[df["ticker"] != ""].copy()
+    for col, _, _ in SEG_LEVELS:
+        if col not in df.columns:
+            df[col] = ""
+        # acepta 19580, 19.580 (miles) o 123,8 (decimal con coma)
+        df[col] = df[col].map(_to_float)
+    for col in ("lectura", "fase", "cierre", "nota"):
+        if col not in df.columns:
+            df[col] = ""
+    df["cierre"] = df["cierre"].str.strip().str.upper().replace("", "D")
+    return df
+
+
+def _to_float(x: str) -> float:
+    s = str(x).strip().replace(" ", "")
+    if not s:
+        return np.nan
+    if "," in s:  # coma decimal: 123,8 → 123.8 ; 19.580,5 → 19580.5
+        s = s.replace(".", "").replace(",", ".")
+    elif s.count(".") == 1 and len(s.split(".")[1]) == 3 and 1 <= len(s.split(".")[0].lstrip("-")) <= 3 \
+            and s.split(".")[0].lstrip("-") != "0":
+        s = s.replace(".", "")  # 19.580 → 19580 (punto de miles)
+    try:
+        return float(s)
+    except ValueError:
+        return np.nan
+
+
+def _resample(d: pd.DataFrame, tf: str) -> pd.Series:
+    if tf == "W":
+        return to_weekly(d)["Close"]
+    if tf == "M":
+        for rule in ("ME", "M"):
+            try:
+                return d["Close"].resample(rule).last().dropna()
+            except ValueError:
+                continue
+    return d["Close"].dropna()
+
+
+def check_seguimiento(seg: pd.DataFrame, prices: dict[str, pd.DataFrame]) -> tuple[list[str], list[str]]:
+    """Devuelve (líneas de tabla para el reporte, alertas de cruce)."""
+    rows, alerts = [], []
+    for _, r in seg.iterrows():
+        tk, tf = r["ticker"], r["cierre"] if r["cierre"] in ("D", "W", "M") else "D"
+        lv = {c: r[c] for c, _, _ in SEG_LEVELS}
+        if tk not in prices:
+            rows.append(f"| **{tk}** | {r['lectura']} | {r['fase']} | {tf} | s/d | – | – | – | ⚠️ sin datos | {r['nota']} |")
+            continue
+        closes = _resample(prices[tk], tf)
+        if len(closes) < 2:
+            continue
+        last, prev, bar = float(closes.iloc[-1]), float(closes.iloc[-2]), closes.index[-1].date()
+        for col, side, txt in SEG_LEVELS:
+            x = lv[col]
+            if np.isnan(x):
+                continue
+            crossed = (last > x >= prev) if side == "above" else (last < x <= prev)
+            if crossed:
+                alerts.append(f"- **{tk}** ({r['lectura']}, cierre {tf} del {bar}): {txt} {x:g} "
+                              f"(cierre {last:.2f}). {r['nota']}")
+        inv, baj, alc = lv["invalida_bajo"], lv["bajista_bajo"], lv["alcista_sobre"]
+        if not np.isnan(inv) and last < inv:
+            estado = "❌ Invalidado"
+        elif not np.isnan(baj) and last < baj:
+            estado = "🔴 Bajo nivel bajista"
+        elif not np.isnan(alc) and last > alc:
+            estado = "🟢 Sobre nivel alcista"
+        else:
+            estado = "⏳ Entre niveles"
+
+        def dist(x):
+            return "–" if np.isnan(x) else f"{x:g} ({(x / last - 1) * 100:+.1f}%)"
+
+        rows.append(f"| **{tk}** | {r['lectura']} | {r['fase']} | {tf} | {last:.2f} | {dist(alc)} | {dist(baj)} | "
+                    f"{dist(inv)} | {estado} | {r['nota']} |")
+    return rows, alerts
+
+
+def seguimiento_section(rows: list[str]) -> list[str]:
+    if not rows:
+        return []
+    return [
+        "## 📌 Mi seguimiento (niveles de mis análisis)",
+        "",
+        "Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actual. "
+        "Cierre D/W/M = diario, semanal o mensual (la semana y el mes en curso aún no cierran).",
+        "",
+        "| Ticker | Lectura | Fase | Cierre | Precio | Nivel alcista | Nivel bajista | Invalidación | Estado | Nota |",
+        "|---|---|---|---|---|---|---|---|---|---|",
+        *rows,
+        "",
+    ]
+
+
 # ───────────────────────────── MAIN ─────────────────────────────
 def main() -> None:
     today = dt.date.today()
@@ -407,7 +528,9 @@ def main() -> None:
     tickers = load_universe()
     bench = CONFIG["benchmark"]
     print(f"Universo: {len(tickers)} acciones")
-    prices = download_prices(sorted(set(tickers) | {bench}))
+    seg = load_seguimiento()
+    seg_tickers = set(seg["ticker"]) if not seg.empty else set()
+    prices = download_prices(sorted(set(tickers) | {bench} | seg_tickers))
     if bench not in prices:
         sys.exit("No se pudo descargar el índice de referencia")
     bench_w = to_weekly(prices[bench])["Close"]
@@ -430,7 +553,17 @@ def main() -> None:
         rows.append((t, fundamentals(t.ticker)))
         time.sleep(0.5)
 
-    report, fresh = build_report(rows, len(prices) - 1, today)
+    n_scanned = sum(1 for t in tickers if t != bench and t in prices)
+    report, fresh = build_report(rows, n_scanned, today)
+    seg_rows, seg_alerts = check_seguimiento(seg, prices) if not seg.empty else ([], [])
+    seg_lines = seguimiento_section(seg_rows)
+    if seg_lines:
+        # la sección de seguimiento va arriba, después del encabezado del reporte
+        head, sep, rest = report.partition("> No es una recomendación de inversión.\n")
+        report = head + sep + "\n" + "\n".join(seg_lines) + rest
+        (REPORTS / "seguimiento.md").parent.mkdir(exist_ok=True)
+        (REPORTS / "seguimiento.md").write_text(
+            f"# Seguimiento de mis análisis — {today.isoformat()}\n\n" + "\n".join(seg_lines[2:]), encoding="utf-8")
     REPORTS.mkdir(exist_ok=True)
     (REPORTS / "latest.md").write_text(report, encoding="utf-8")
     (REPORTS / f"{today.isoformat()}.md").write_text(report, encoding="utf-8")
@@ -445,10 +578,15 @@ def main() -> None:
     ).to_csv(REPORTS / "latest.csv", index=False)
 
     # texto para el issue de notificación (lo usa el workflow)
-    if fresh:
-        body = ["Señales nuevas con fundamentales aptos:", ""]
-        body += [f"- **{t.ticker}** ({fu['name']}): {ev[1]} el {ev[0]} a {ev[2]} · fund. {fu['score']}/{fu['avail']}" for t, fu, ev in fresh]
-        body += ["", "Reporte completo: reports/latest.md"]
+    if fresh or seg_alerts:
+        body = []
+        if seg_alerts:
+            body += ["📌 Cruces de niveles en mi seguimiento (seguimiento.csv):", "", *seg_alerts, ""]
+        if fresh:
+            body += ["Señales nuevas con fundamentales aptos:", ""]
+            body += [f"- **{t.ticker}** ({fu['name']}): {ev[1]} el {ev[0]} a {ev[2]} · fund. {fu['score']}/{fu['avail']}" for t, fu, ev in fresh]
+            body += [""]
+        body += ["Reporte completo: reports/latest.md"]
         (REPORTS / "signals.txt").write_text("\n".join(body), encoding="utf-8")
     elif (REPORTS / "signals.txt").exists():
         (REPORTS / "signals.txt").unlink()

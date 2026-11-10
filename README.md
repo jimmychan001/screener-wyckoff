@@ -12,7 +12,25 @@ No necesitas instalar nada: corre en los servidores de GitHub (GitHub Actions).
 - **[`reports/latest.md`](reports/latest.md)**: el reporte del último día (se abre directo en GitHub, también desde el celular).
 - `reports/AAAA-MM-DD.md`: el histórico, un archivo por día.
 - `reports/latest.csv`: los mismos datos para abrir en Excel o Google Sheets.
-- **Notificaciones:** cuando aparece una señal nueva (CHoCH, LPS o ruptura) en una acción con fundamentales aptos, se crea un *issue* y GitHub te avisa por correo o en la app.
+- **Notificaciones:** cuando aparece una señal nueva (CHoCH, LPS o ruptura) en una acción con fundamentales aptos, o cuando el precio cruza un nivel de tu `seguimiento.csv`, se crea un *issue* y GitHub te avisa por correo o en la app.
+
+## 📌 Mi seguimiento: alertas de los niveles de mis análisis
+
+En **[`seguimiento.csv`](seguimiento.csv)** están los niveles de decisión de cada acción que analicé a mano
+(nivel alcista, nivel bajista e invalidación). Cada día hábil el screener revisa el cierre y:
+
+- muestra una tabla **"Mi seguimiento"** al comienzo de `reports/latest.md` (y en `reports/seguimiento.md`),
+  con el precio, la distancia a cada nivel y el estado (🟢 sobre el nivel alcista · 🔴 bajo el nivel bajista · ❌ invalidado · ⏳ entre niveles);
+- crea un **issue** (te llega la notificación) cuando el precio **cruza** uno de esos niveles.
+
+Columnas: `ticker` (formato Yahoo; el IBEX es `^IBEX`), `lectura`, `fase`, `cierre` (D diario, W semanal, M mensual),
+`alcista_sobre`, `bajista_bajo`, `invalida_bajo`, `nota`, `actualizado`. Se edita con el lápiz ✏️ igual que `watchlist.txt`.
+Los activos de esta lista solo se vigilan por niveles; no necesitan estar en el S&P 500.
+
+## 📒 Bitácora de análisis
+
+En **[`analisis/`](analisis/README.md)** hay una ficha por activo analizado (imagen corregida, lectura Wyckoff,
+eventos por fase y niveles). Sirve para revisar después qué lecturas acertaron.
 
 ## 🔍 Qué hace (gráfico semanal)
 
@@ -21,7 +39,7 @@ No necesitas instalar nada: corre en los servidores de GitHub (GitHub Actions).
    - Spring/Test (Fase C)
    - CHoCH alcista, con volumen = SOS (Fase D)
    - LPS (mínimo más alto con volumen bajo)
-   - Ruptura del techo con volumen (Fase E = inicio de Etapa 2)
+   - Ruptura del techo con volumen (Fase E = inicio de Etapa 2). Si sale del rango **sin** volumen (dos cierres sobre el techo), también se marca, para que no quede como "Fase B".
 3. **Respaldo:**
    - Fuerza relativa Mansfield contra el SPY.
    - Relación de volumen entre semanas alcistas y bajistas dentro del rango.

@@ -1,0 +1,16 @@
+# Niveles de decisión de mis análisis Wyckoff (los revisa el screener cada día hábil).
+# Una fila por activo. Ticker en formato Yahoo Finance (índice IBEX = ^IBEX; chilenas terminan en .SN).
+# cierre: D = diario, W = semanal, M = mensual (qué cierre se usa para decidir).
+# alcista_sobre: un cierre SOBRE este precio activa el escenario alcista (SOS, fase E, etc.).
+# bajista_bajo:  un cierre BAJO este precio activa el escenario bajista (SOW, distribución, etc.).
+# invalida_bajo: un cierre BAJO este precio invalida la lectura alcista (déjalo vacío si no aplica).
+# Usa punto o coma decimal (123.8 o 123,8). Las líneas que empiezan con # se ignoran.
+ticker,lectura,fase,cierre,alcista_sobre,bajista_bajo,invalida_bajo,nota,actualizado
+A,reacumulación,D/E,W,182,155,110,"BU/LPS esperado ~160; sobre 182 (BC) = fase E",2026-11-10
+MDT,acumulación,D,M,108,92,73,"BU/LPS esperado 92-96; volumen de oct-26 inflado por canje MiniMed",2026-11-10
+AEP,distribución,D,D,135,123.8,,"LPSY en ~132; sobre 132 y 135 = distribución fallida",2026-11-10
+ARE,acumulación,C,D,48,44.5,38.5,"Test en curso; SOS sobre el creek 56-57.5",2026-11-10
+AMD,reacumulación,B,W,650,430,,"UA en ~650, BC ~585; esperar fase C",2026-11-10
+SYK,acumulación,A,W,350,267,,"Falta el ST: retroceso a 280-300 con menos volumen que el SC",2026-11-10
+DOV,reacumulación,B extendida,W,234,196,184,"Fase C pendiente; Test con volumen bajo sobre ~201",2026-11-10
+^IBEX,acumulación,E,D,20300,19580,18650,"Objetivo ~20.300; BU debe sostener ~19.580 (sin volumen en Yahoo)",2026-11-10
