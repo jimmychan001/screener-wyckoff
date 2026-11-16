@@ -1,12 +1,6 @@
 Señales nuevas con fundamentales aptos:
 
-- **AVY** (Avery Dennison Corporation): CHoCH (sin volumen) el 2026-11-06 a 186.78 · fund. 6/7
-- **LOW** (Lowe's Companies, Inc.): CHoCH (sin volumen) el 2026-11-06 a 224.55 · fund. 5/5
-- **MSI** (Motorola Solutions, Inc.): Ruptura Etapa 2 el 2026-11-06 a 514.51 · fund. 5/7
 - **PEP** (Pepsico, Inc.): CHoCH (sin volumen) el 2026-11-13 a 145.44 · fund. 6/7
-- **REGN** (Regeneron Pharmaceuticals, Inc.): Ruptura Etapa 2 el 2026-11-06 a 904.35 · fund. 7/7
-- **STZ** (Constellation Brands, Inc.): CHoCH (sin volumen) el 2026-11-06 a 141.97 · fund. 6/7
-- **VLTO** (Veralto Corp): Ruptura Etapa 2 el 2026-11-06 a 117.09 · fund. 7/7
-- **VRSN** (VeriSign, Inc.): Ruptura Etapa 2 el 2026-11-06 a 308.67 · fund. 5/5
+- **TSN** (Tyson Foods, Inc.): CHoCH (sin volumen) el 2026-11-20 a 63.95 · fund. 5/7
 
 Reporte completo: reports/latest.md
