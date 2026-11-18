@@ -27,6 +27,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+import secado_volumen as sv
+
 ROOT = Path(__file__).resolve().parent
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 REPORTS = ROOT / "reports"
@@ -553,8 +555,37 @@ def main() -> None:
         rows.append((t, fundamentals(t.ticker)))
         time.sleep(0.5)
 
+    # ── Clavicular y volumen (diario): acumulación con secado de volumen
+    sec_cfg = CONFIG.get("secado", {})
+    dry: list[sv.DryUpResult] = []
+    if sec_cfg.get("enabled", False):
+        for t in tickers:
+            if t == bench or t not in prices:
+                continue
+            try:
+                r = sv.scan_dryup(t, prices[t], sec_cfg)
+            except Exception as e:  # noqa: BLE001
+                print(f"[aviso] secado {t}: {e}")
+                continue
+            if r:
+                dry.append(r)
+        print(f"Clavicular y volumen (secado): {len(dry)}")
+    funds = {t.ticker: fu for t, fu in rows}
+    for r in dry:  # fundamentales solo de los que faltan
+        if r.ticker not in funds:
+            funds[r.ticker] = fundamentals(r.ticker)
+            time.sleep(0.5)
+
     n_scanned = sum(1 for t in tickers if t != bench and t in prices)
     report, fresh = build_report(rows, n_scanned, today)
+    if sec_cfg.get("enabled", False):
+        dry_lines = sv.report_section(dry, funds)
+        # va antes de la explicación final ("---") del reporte
+        head, sep, rest = report.rpartition("\n---\n")
+        report = head + "\n" + "\n".join(dry_lines) + sep + rest
+        REPORTS.mkdir(exist_ok=True)
+        pd.DataFrame(sv.to_rows(dry, funds)).to_csv(REPORTS / "secado.csv", index=False)
+    intent = [r for r in dry if r.breakout_date]
     seg_rows, seg_alerts = check_seguimiento(seg, prices) if not seg.empty else ([], [])
     seg_lines = seguimiento_section(seg_rows)
     if seg_lines:
@@ -578,10 +609,16 @@ def main() -> None:
     ).to_csv(REPORTS / "latest.csv", index=False)
 
     # texto para el issue de notificación (lo usa el workflow)
-    if fresh or seg_alerts:
+    if fresh or seg_alerts or intent:
         body = []
         if seg_alerts:
             body += ["📌 Cruces de niveles en mi seguimiento (seguimiento.csv):", "", *seg_alerts, ""]
+        if intent:
+            body += ["🚀 Intención: ruptura del techo con volumen tras acumulación con secado:", ""]
+            body += [f"- **{r.ticker}** ({funds.get(r.ticker, {}).get('name', '')}): rompió {r.top} el "
+                     f"{r.breakout_date}, cierre {r.close} · rango {r.floor}–{r.top} · puntaje {r.score}/7"
+                     for r in intent]
+            body += [""]
         if fresh:
             body += ["Señales nuevas con fundamentales aptos:", ""]
             body += [f"- **{t.ticker}** ({fu['name']}): {ev[1]} el {ev[0]} a {ev[2]} · fund. {fu['score']}/{fu['avail']}" for t, fu, ev in fresh]
