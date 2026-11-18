@@ -26,6 +26,29 @@
     "max_de": 1.0,
     "min_score": 5
   },
+  "secado": {
+    "enabled": true,
+    "avg_len": 50,
+    "min_range_days": 40,
+    "max_range_days": 160,
+    "climax_mult": 2.5,
+    "prior_days": 120,
+    "min_decline": 20.0,
+    "max_width": 30.0,
+    "max_undercut": 5.0,
+    "skip_after_climax": 3,
+    "max_vol_slope": -5.0,
+    "max_late_early": 0.75,
+    "dryup_days": 5,
+    "max_dryup": 0.6,
+    "max_pos": 40.0,
+    "higher_low_days": 15,
+    "higher_low_pct": 1.0,
+    "breakout_days": 5,
+    "breakout_mult": 1.8,
+    "min_score": 5,
+    "min_dollar_vol": 5000000
+  },
   "report": {
     "recent_event_days": 7
   }

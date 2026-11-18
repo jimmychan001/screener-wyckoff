@@ -55,6 +55,19 @@ Cada acción queda en una de estas categorías:
 
 Es la misma lógica del indicador de TradingView **Wyckoff+Fund**. Confirma siempre el gráfico a ojo.
 
+## 🔍 Clavicular y volumen: secado de volumen (gráfico diario)
+
+Módulo `secado_volumen.py`, basado en la charla de Rankia "Clavicular y volumen". Busca acciones que **están acumulando con volumen decreciente**:
+
+1. **Caída previa** de al menos 20% (el último desarrollo tendencial).
+2. **Climax de venta**: barra de volumen ≥ 2,5 veces el promedio, cerca de los mínimos (la parada del precio).
+3. **Rango lateral** de no más de 30% de ancho, sin perforar el piso del climax.
+4. **Volumen decreciente** dentro del rango (la línea amarilla): pendiente negativa y el final del rango con menos volumen que el inicio.
+5. **Secado cerca del soporte** (el recuadro verde): volumen de los últimos 5 días bajo 0,6 veces el promedio del rango, con el precio en la parte baja del rango o haciendo un mínimo más alto.
+6. **Intención**: cierre sobre el techo con volumen alto. Crea un issue 🚀 para avisarte.
+
+Resultados: sección "Clavicular y volumen" en `reports/latest.md` y la tabla completa en `reports/secado.csv`. Los umbrales están en `config.json` → `"secado"` (con `"enabled": false` se apaga).
+
 ## ⚙️ Cómo ajustarlo (desde la web de GitHub, sin programar)
 
 - **`config.json`:** los umbrales. Por ejemplo `max_width` (ancho del rango), `min_decline` (caída previa), `min_roe`, `min_score`. Ábrelo, pulsa el lápiz ✏️, edita y guarda con *Commit changes*.
