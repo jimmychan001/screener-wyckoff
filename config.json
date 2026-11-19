@@ -49,6 +49,26 @@
     "min_score": 5,
     "min_dollar_vol": 5000000
   },
+  "estrellas": {
+    "enabled": true,
+    "recent_days": 3,
+    "alert_days": 1,
+    "atr_len": 14,
+    "trend_days": 5,
+    "min_body_atr": 0.6,
+    "min_body_range": 0.5,
+    "max_star_body": 0.35,
+    "star_overlap": 0.1,
+    "min_body3_atr": 0.4,
+    "penetration": 0.5,
+    "lookback": 250,
+    "piv": 5,
+    "cluster_atr": 0.5,
+    "min_touches": 2,
+    "tol_atr": 0.5,
+    "rvol_ok": 1.2,
+    "min_dollar_vol": 5000000
+  },
   "report": {
     "recent_event_days": 7
   }

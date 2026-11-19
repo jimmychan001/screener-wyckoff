@@ -27,6 +27,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+import estrellas as es
 import secado_volumen as sv
 
 ROOT = Path(__file__).resolve().parent
@@ -586,6 +587,26 @@ def main() -> None:
         REPORTS.mkdir(exist_ok=True)
         pd.DataFrame(sv.to_rows(dry, funds)).to_csv(REPORTS / "secado.csv", index=False)
     intent = [r for r in dry if r.breakout_date]
+
+    # ── Estrellas del amanecer / atardecer en soporte o resistencia (diario)
+    st_cfg = CONFIG.get("estrellas", {})
+    stars: list[es.StarResult] = []
+    if st_cfg.get("enabled", False):
+        seg_cfg = {**st_cfg, "min_dollar_vol": 0}  # los activos de mi seguimiento (p. ej. índices) no filtran liquidez
+        for t in sorted((set(tickers) | seg_tickers) - {bench}):
+            if t not in prices:
+                continue
+            try:
+                stars += es.scan_stars(t, prices[t], seg_cfg if t in seg_tickers else st_cfg)
+            except Exception as e:  # noqa: BLE001
+                print(f"[aviso] estrellas {t}: {e}")
+        print(f"Estrellas en soporte/resistencia: {len(stars)}")
+        star_lines = es.report_section(stars, funds, st_cfg.get("rvol_ok", 1.2))
+        head, sep, rest = report.rpartition("\n---\n")
+        report = head + "\n" + "\n".join(star_lines) + sep + rest
+        REPORTS.mkdir(exist_ok=True)
+        pd.DataFrame(es.to_rows(stars, funds)).to_csv(REPORTS / "estrellas.csv", index=False)
+    new_stars = [r for r in stars if r.dias < st_cfg.get("alert_days", 1)]
     seg_rows, seg_alerts = check_seguimiento(seg, prices) if not seg.empty else ([], [])
     seg_lines = seguimiento_section(seg_rows)
     if seg_lines:
@@ -609,7 +630,7 @@ def main() -> None:
     ).to_csv(REPORTS / "latest.csv", index=False)
 
     # texto para el issue de notificación (lo usa el workflow)
-    if fresh or seg_alerts or intent:
+    if fresh or seg_alerts or intent or new_stars:
         body = []
         if seg_alerts:
             body += ["📌 Cruces de niveles en mi seguimiento (seguimiento.csv):", "", *seg_alerts, ""]
@@ -618,6 +639,14 @@ def main() -> None:
             body += [f"- **{r.ticker}** ({funds.get(r.ticker, {}).get('name', '')}): rompió {r.top} el "
                      f"{r.breakout_date}, cierre {r.close} · rango {r.floor}–{r.top} · puntaje {r.score}/7"
                      for r in intent]
+            body += [""]
+        if new_stars:
+            rv_ok = st_cfg.get("rvol_ok", 1.2)
+            body += ["⭐ Estrellas del amanecer / atardecer en soporte o resistencia:", ""]
+            body += [f"- **{r.ticker}** ({funds.get(r.ticker, {}).get('name', '')}): {r.tipo} el {r.fecha} en "
+                     f"{r.nivel_tipo.lower()} {r.nivel} ({r.toques} toques) · cierre {r.close} · extremo {r.stop} · "
+                     f"RVOL {r.rvol3}{' ✅' if r.rvol3 >= rv_ok else ''} · {r.tendencia}"
+                     for r in sorted(new_stars, key=lambda r: (r.tipo, -r.toques))]
             body += [""]
         if fresh:
             body += ["Señales nuevas con fundamentales aptos:", ""]

@@ -68,6 +68,32 @@ Módulo `secado_volumen.py`, basado en la charla de Rankia "Clavicular y volumen
 
 Resultados: sección "Clavicular y volumen" en `reports/latest.md` y la tabla completa en `reports/secado.csv`. Los umbrales están en `config.json` → `"secado"` (con `"enabled": false` se apaga).
 
+## ⭐ Estrellas del amanecer y del atardecer en soporte o resistencia (gráfico diario)
+
+Módulo `estrellas.py`. Busca el patrón de giro de tres velas **solo cuando coincide con un nivel relevante**:
+
+- **Estrella del amanecer ⭐ (alcista):** después de una bajada aparece una vela bajista grande, luego una vela de cuerpo pequeño abajo (la estrella) y después una vela alcista que cierra sobre la mitad del cuerpo de la primera. Tiene que formarse **sobre un soporte**.
+- **Estrella del atardecer 🌆 (bajista):** es el espejo, después de una subida y **bajo una resistencia**.
+
+**Cómo encuentra los soportes y resistencias:**
+1. Marca los máximos y mínimos pivote del último año (5 velas a cada lado).
+2. Agrupa los pivotes que están a menos de 0,5 ATR entre sí en una zona. Una zona necesita al menos 2 toques.
+3. Usa tanto los máximos como los mínimos, porque un techo roto puede pasar a ser soporte ("ex-resistencia").
+4. El patrón cuenta si su mínimo (o su máximo, en la del atardecer) toca la zona con una tolerancia de 0,5 ATR y la tercera vela cierra del lado correcto del nivel.
+
+**Qué muestra el reporte:**
+- **Datos del nivel:** el precio y cuántos toques tiene la zona.
+- **Extremo del patrón:** sirve de referencia para el stop.
+- **RVOL de la tercera vela:** se marca con ✅ si es 1,2 o más.
+- **Tendencia de fondo:** precio sobre o bajo la media de 150 días, que equivale a 30 semanas en Weinstein, y si esa media sube ↑ o baja ↓. Un amanecer **sobre MA150 ↑** es un retroceso dentro de la Etapa 2.
+
+**Dónde lo ves:**
+- La sección "Estrellas" en `reports/latest.md`.
+- La tabla completa en `reports/estrellas.csv`.
+- Un **issue** que te avisa cuando un patrón se completa en el cierre del día.
+
+También revisa los activos de `seguimiento.csv`. Los umbrales están en `config.json` → `"estrellas"`. Por ejemplo, `tol_atr` es la tolerancia al nivel, `min_touches` el número de toques mínimo, `penetration` cuánto debe recuperar la vela 3 y `recent_days` cuántos días hacia atrás muestra el reporte. Con `"enabled": false` el módulo se apaga.
+
 ## ⚙️ Cómo ajustarlo (desde la web de GitHub, sin programar)
 
 - **`config.json`:** los umbrales. Por ejemplo `max_width` (ancho del rango), `min_decline` (caída previa), `min_roe`, `min_score`. Ábrelo, pulsa el lápiz ✏️, edita y guarda con *Commit changes*.
