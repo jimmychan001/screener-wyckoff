@@ -41,7 +41,7 @@ CSCO,"Cisco Systems, Inc.",Technology,94.7,1,Rango · Fase B,1,93.35,129.38,38.6
 CTAS,Cintas Corporation,Industrials,218.92,5,Ruptura · Fase E (Etapa 2),2,159.94,207.5,39.5,1.12,14.99,True,7,7,CANDIDATO ✓,Salió del rango ↑ (sin volumen de ruptura),2026-10-30
 CVX,Chevron Corporation,Energy,206.5,5,Ruptura · Fase E (Etapa 2),2,162.01,215.99,44.8,1.11,12.01,False,7,7,CANDIDATO ✓,Salió del rango ↑ (sin volumen de ruptura),2026-10-23
 DD,"DuPont de Nemours, Inc.",Basic Materials,149.69,3,CHoCH/SOS · Fase D,1,122.8,153.63,29.9,1.21,10.3,True,4,6,"Técnico sí, fundamental débil",CHoCH (sin volumen),2026-11-13
-DE,Deere & Company,Industrials,624.89,1,Rango · Fase B,1,512.6,704.2,38.4,1.94,7.09,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-09-18
+DE,Deere & Company,Industrials,624.89,1,Rango · Fase B,1,512.59,704.2,38.4,1.94,7.09,True,5,7,Vigilar: falta CHoCH,Rango detectado,2026-09-18
 DG,Dollar General Corporation,Consumer Defensive,133.51,1,Rango · Fase B,1,98.57,133.5,43.5,0.99,5.69,True,6,7,Vigilar: falta CHoCH,Rango detectado,2026-09-11
 DHI,"D.R. Horton, Inc.",Consumer Cyclical,142.64,2,Spring/Test · Fase C,1,130.52,169.71,30.6,0.7,-3.07,True,5,7,Vigilar: falta CHoCH,Spring,2026-10-16
 DHR,Danaher Corporation,Healthcare,227.56,5,Ruptura · Fase E (Etapa 2),2,160.31,219.54,44.1,1.66,10.74,True,6,7,CANDIDATO ✓,Salió del rango ↑ (sin volumen de ruptura),2026-10-23

@@ -1,6 +1,6 @@
 # Screener Wyckoff + Weinstein + Fundamentales — 2026-11-19
 
-Acciones analizadas: **498** · gráfico **semanal** · referencia RS: SPY
+Acciones analizadas: **497** · gráfico **semanal** · referencia RS: SPY
 
 > Detecciones mecánicas: cada candidata debe confirmarse a ojo en TradingView con el indicador Wyckoff+Fund.
 > No es una recomendación de inversión.
@@ -146,7 +146,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **MSCI** | MSCI Inc. | Financial Services | 624.33 | Rango · Fase B | 3 | 493.99–635.98 | 27.7% | 1.01x | 9.44 ↑ | 5/5 | Rango detectado (2026-05-29) |
 | **ECL** | Ecolab Inc. | Basic Materials | 297.32 | Rango · Fase B | 3 | 241.85–306.79 | 29.4% | 1.46x | 8.37 ↑ | 5/7 | Rango detectado (2026-08-14) |
 | **ERIE** | Erie Indemnity Company | Financial Services | 268.94 | Rango · Fase B | 1 | 202.12–282.74 | 45.5% | 0.94x | 7.71 ↑ | 5/7 | Rango detectado (2026-08-14) |
-| **DE** | Deere & Company | Industrials | 624.89 | Rango · Fase B | 1 | 512.6–704.2 | 38.4% | 1.94x | 7.09 ↑ | 5/7 | Rango detectado (2026-09-18) |
+| **DE** | Deere & Company | Industrials | 624.89 | Rango · Fase B | 1 | 512.59–704.2 | 38.4% | 1.94x | 7.09 ↑ | 5/7 | Rango detectado (2026-09-18) |
 | **AMZN** | Amazon.com, Inc. | Consumer Cyclical | 257.37 | Rango · Fase B | 3 | 196.0–273.88 | 27.3% | 0.89x | 6.65 ↑ | 5/7 | Rango detectado (2026-05-01) |
 | **COR** | Cencora, Inc. | Healthcare | 341.25 | Rango · Fase B | 1 | 243.32–338.07 | 39.7% | 2.01x | 6.14 ↑ | 5/6 | Rango detectado (2026-09-18) |
 | **HSIC** | Henry Schein, Inc. | Healthcare | 84.8 | Rango · Fase B | 3 | 68.7–92.18 | 25.2% | 1.55x | 5.52 ↑ | 5/7 | Rango detectado (2026-08-28) |
@@ -293,7 +293,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | NWS | 6.4% ✓ | 46.3% ✓ | 1.12 ✓ | 754 M ✓ | 8.7% ✗ | 0.32 ✓ | 6.8% ✓ | 25.1 | 18.3 |
 | CPT | -2.3% ✗ | 771.3% ✓ | 10.70 ✓ | 247 M ✓ | 24.5% ✓ | 0.92 ✓ | 71.1% ✓ | 9.0 | 209.3 |
 | HAL | 1.8% ✗ | 2400.0% ✓ | 2.38 ✓ | 1,633 M ✓ | 18.8% ✓ | 0.73 ✓ | 8.9% ✓ | 13.3 | 10.8 |
-| TXT | 4.1% ✗ | 19.1% ✓ | 5.56 ✓ | 756 M ✓ | 12.5% ✓ | 0.52 ✓ | 6.3% ✓ | 14.6 | 11.4 |
+| TXT | 4.1% ✗ | 19.1% ✓ | 5.56 ✓ | 756 M ✓ | 12.5% ✓ | 0.52 ✓ | 6.3% ✓ | 14.6 | 12.4 |
 | CEG | 45.4% ✓ | 74.5% ✓ | 12.44 ✓ | -5,374 M ✗ | 18.3% ✓ | 0.71 ✓ | 12.8% ✓ | 20.3 | 18.8 |
 | MKC | 17.4% ✓ | -57.1% ✗ | 5.53 ✓ | 742 M ✓ | 22.6% ✓ | 0.66 ✓ | 19.4% ✓ | 8.3 | 14.3 |
 | MMM | 1.0% ✗ | 69.7% ✓ | 6.70 ✓ | 6,372 M ✓ | 73.0% ✓ | 3.04 ✗ | 14.0% ✓ | 26.6 | 18.0 |
@@ -331,6 +331,12 @@ Caída previa → climax de venta → rango lateral con **volumen decreciente** 
 | **EXE** | Expand Energy Corporation | Acumulando | 5/7 | 82.44 | 82.71–94.3 | -2% | 2026-09-18 (2.7x) | 24.6% | -6% | 1.01x | 0.68x | no | 6/7 | vol. final/inicial · secado |
 
 **Cómo leer:** *Posición* 0% = en el piso, 100% = en el techo. *Vol. c/20 ses.* = cuánto cambia el volumen cada 20 sesiones dentro del rango (negativo = la línea amarilla baja). *Vol. final/inicial* < 1 = el volumen del final del rango es menor que el del inicio. *Secado* = volumen de los últimos días / promedio del rango (< 0.6 = recuadro verde). *Falta* = condiciones que no cumple.
+
+## ⭐ Estrellas del amanecer / atardecer en soporte o resistencia (diario)
+
+Patrón de giro de tres velas que coincide con un nivel de soporte/resistencia calculado con pivotes. ✅ = la vela 3 tuvo volumen alto (RVOL ≥ 1.2).
+
+_Ninguna en los últimos días._
 
 ---
 **Cómo leer:** Fase B = rango en formación · C = Spring/Test · D = CHoCH/SOS o LPS (zona de compra) · E = ruptura con volumen (inicio Etapa 2). Vol ↑/↓ > 1 = más volumen en semanas alcistas (huella de acumulación). RS Mansfield > 0 y ↑ = supera al índice.
