@@ -1,11 +1,10 @@
-📌 Cruces de niveles en mi seguimiento (seguimiento.csv):
+⭐ Estrellas del amanecer / atardecer en soporte o resistencia:
 
-- **AMD** (reacumulación, cierre W del 2026-11-20): 🔴 cerró BAJO el nivel bajista 430 (cierre 424.39). UA en ~650, BC ~585; esperar fase C
-- **DOV** (reacumulación, cierre W del 2026-11-20): 🔴 cerró BAJO el nivel bajista 196 (cierre 194.29). Fase C pendiente; Test con volumen bajo sobre ~201
+- **DECK** (): Amanecer ⭐ el 2026-11-23 en soporte 77.56 (3 toques) · cierre 81.54 · extremo 77.65 · RVOL 1.12 · bajo MA150 ↓
+- **BAX** (): Amanecer ⭐ el 2026-11-23 en soporte 25.87 (2 toques) · cierre 26.59 · extremo 24.85 · RVOL 0.59 · sobre MA150 ↑
 
 Señales nuevas con fundamentales aptos:
 
-- **PEP** (Pepsico, Inc.): CHoCH (sin volumen) el 2026-11-13 a 145.44 · fund. 6/7
 - **TSN** (Tyson Foods, Inc.): CHoCH + SOS el 2026-11-20 a 65.12 · fund. 5/6
 
 Reporte completo: reports/latest.md

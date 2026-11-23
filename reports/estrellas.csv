@@ -1,1 +1,3 @@
-
+ticker,empresa,patron,fecha,dias,precio,nivel,tipo_nivel,toques,dist_atr,extremo_stop,rvol_vela3,tendencia
+BAX,,Amanecer ⭐,2026-11-23,0,26.59,25.87,Soporte,2,0.96,24.85,0.59,sobre MA150 ↑
+DECK,,Amanecer ⭐,2026-11-23,0,81.54,77.56,Soporte,3,0.02,77.65,1.12,bajo MA150 ↓
