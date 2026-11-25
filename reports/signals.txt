@@ -1,14 +1,6 @@
-📌 Cruces de niveles en mi seguimiento (seguimiento.csv):
-
-- **A** (reacumulación, cierre W del 2026-11-27): 🟢 cerró SOBRE el nivel alcista 182 (cierre 183.52). BU/LPS esperado ~160; sobre 182 (BC) = fase E
-
-⭐ Estrellas del amanecer / atardecer en soporte o resistencia:
-
-- **CI** (The Cigna Group): Amanecer ⭐ el 2026-11-24 en soporte 269.72 (21 toques) · cierre 275.0 · extremo 267.99 · RVOL 0.99 · bajo MA150 ↑
-
 Señales nuevas con fundamentales aptos:
 
-- **BRO** (Brown & Brown, Inc.): CHoCH (sin volumen) el 2026-11-27 a 76.01 · fund. 5/7
+- **BRO** (Brown & Brown, Inc.): CHoCH (sin volumen) el 2026-11-27 a 78.43 · fund. 5/7
 - **TSN** (Tyson Foods, Inc.): CHoCH + SOS el 2026-11-20 a 65.12 · fund. 5/6
 
 Reporte completo: reports/latest.md
