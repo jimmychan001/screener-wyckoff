@@ -1,4 +1,4 @@
-# Screener Wyckoff + Weinstein + Fundamentales — 2026-11-25
+# Screener Wyckoff + Weinstein + Fundamentales — 2026-11-26
 
 Acciones analizadas: **499** · gráfico **semanal** · referencia RS: SPY
 
@@ -18,7 +18,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **AMD** | reacumulación | B | W | 406.03 | 650 (+60.1%) | 430 (+5.9%) | – | 🔴 Bajo nivel bajista | UA en ~650, BC ~585; esperar fase C |
 | **SYK** | acumulación | A | W | 332.90 | 350 (+5.1%) | 267 (-19.8%) | – | ⏳ Entre niveles | Falta el ST: retroceso a 280-300 con menos volumen que el SC |
 | **DOV** | reacumulación | B extendida | W | 205.35 | 234 (+14.0%) | 196 (-4.6%) | 184 (-10.4%) | ⏳ Entre niveles | Fase C pendiente; Test con volumen bajo sobre ~201 |
-| **^IBEX** | acumulación | E | D | 19015.80 | 20300 (+6.8%) | 19580 (+3.0%) | 18650 (-1.9%) | 🔴 Bajo nivel bajista | Objetivo ~20.300; BU debe sostener ~19.580 (sin volumen en Yahoo) |
+| **^IBEX** | acumulación | E | D | 18635.80 | 20300 (+8.9%) | 19580 (+5.1%) | 18650 (+0.1%) | ❌ Invalidado | Objetivo ~20.300; BU debe sostener ~19.580 (sin volumen en Yahoo) |
 
 ## 🔔 Señales nuevas (últimos 7 días) con fundamentales aptos
 
@@ -34,7 +34,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **REGN** | Regeneron Pharmaceuticals, Inc. | Healthcare | 981.87 | Ruptura · Fase E (Etapa 2) | 2 | 608.36–817.11 | 68.0% | 2.05x | 30.08 ↑ | 7/7 | Ruptura Etapa 2 (2026-11-06) |
 | **A** | Agilent Technologies, Inc. | Healthcare | 178.44 | Ruptura · Fase E (Etapa 2) | 2 | 107.98–149.25 | 53.3% | 0.99x | 28.98 ↑ | 7/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-09-25) |
 | **ROP** | Roper Technologies, Inc. | Technology | 483.09 | Ruptura · Fase E (Etapa 2) | 2 | 304.43–409.23 | 59.3% | 2.03x | 26.44 ↑ | 7/7 | Ruptura sin CHoCH previo (2026-10-30) |
-| **VLTO** | Veralto Corp | Industrials | 120.19 | Ruptura · Fase E (Etapa 2) | 2 | 79.8–102.97 | 48.7% | 2.86x | 25.77 ↑ | 7/7 | Ruptura Etapa 2 (2026-11-06) |
+| **VLTO** | Veralto Corp | Industrials | 120.19 | Ruptura · Fase E (Etapa 2) | 2 | 79.8–102.97 | 48.7% | 2.87x | 25.77 ↑ | 7/7 | Ruptura Etapa 2 (2026-11-06) |
 | **CTAS** | Cintas Corporation | Industrials | 227.65 | Ruptura · Fase E (Etapa 2) | 2 | 159.94–207.5 | 39.5% | 1.24x | 18.93 ↑ | 7/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-10-30) |
 | **NDAQ** | Nasdaq, Inc. | Financial Services | 107.07 | Ruptura · Fase E (Etapa 2) | 2 | 76.31–100.77 | 46.1% | 2.27x | 16.58 ↑ | 7/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-11-06) |
 | **COP** | ConocoPhillips | Energy | 135.02 | Ruptura · Fase E (Etapa 2) | 2 | 101.34–140.69 | 51.2% | 1.0x | 15.19 ↓ | 7/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-10-23) |
@@ -45,6 +45,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **XOM** | ExxonMobil Holdings Corporation | Energy | 158.08 | Ruptura · Fase E (Etapa 2) | 2 | 133.24–173.0 | 40.6% | 1.16x | 6.58 ↓ | 7/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-10-30) |
 | **AMP** | Ameriprise Financial, Inc. | Financial Services | 504.98 | Ruptura · Fase E (Etapa 2) | 2 | 387.1–539.82 | 32.6% | 1.42x | 3.48 ↑ | 7/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-09-04) |
 | **META** | Meta Platforms, Inc. | Communication Services | 609.89 | Ruptura · Fase E (Etapa 2) | 1 | 519.37–690.33 | 48.8% | 0.71x | -2.85 ↑ | 7/7 | Ruptura sin CHoCH previo (2026-09-25) |
+| **BDX** | Becton, Dickinson and Company | Healthcare | 221.24 | Ruptura · Fase E (Etapa 2) | 2 | 140.0–183.77 | 59.9% | 1.9x | 32.78 ↑ | 6/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-10-23) |
 | **ALLE** | Allegion plc | Industrials | 192.2 | Ruptura · Fase E (Etapa 2) | 2 | 124.05–171.99 | 55.2% | 1.32x | 24.65 ↑ | 6/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-10-30) |
 | **AJG** | Arthur J. Gallagher & Co. | Financial Services | 292.39 | Ruptura · Fase E (Etapa 2) | 2 | 189.61–264.47 | 48.4% | 2.19x | 22.89 ↑ | 6/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-11-06) |
 | **MRSH** | Marsh | Financial Services | 216.66 | Ruptura · Fase E (Etapa 2) | 2 | 156.36–190.14 | 41.5% | 1.6x | 21.23 ↑ | 6/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-10-30) |
@@ -57,12 +58,11 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **FTV** | Fortive Corporation | Technology | 66.11 | Ruptura · Fase E (Etapa 2) | 2 | 45.2–62.3 | 27.4% | 1.5x | 12.87 ↑ | 6/7 | Ruptura sin CHoCH previo (2026-10-30) |
 | **DHR** | Danaher Corporation | Healthcare | 227.35 | Ruptura · Fase E (Etapa 2) | 2 | 160.31–219.54 | 44.1% | 1.59x | 10.62 ↑ | 6/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-10-23) |
 | **RJF** | Raymond James Financial, Inc. | Financial Services | 162.84 | Ruptura · Fase E (Etapa 2) | 2 | 137.85–172.28 | 29.1% | 1.37x | 2.26 ↑ | 6/6 | Salió del rango ↑ (sin volumen de ruptura) (2026-09-04) |
-| **BDX** | Becton, Dickinson and Company | Healthcare | 221.24 | Ruptura · Fase E (Etapa 2) | 2 | 140.0–183.77 | 59.9% | 1.9x | 32.78 ↑ | 5/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-10-23) |
 | **CAH** | Cardinal Health, Inc. | Healthcare | 282.91 | Ruptura · Fase E (Etapa 2) | 2 | 179.64–244.3 | 48.2% | 1.15x | 27.1 ↑ | 5/5 | Salió del rango ↑ (sin volumen de ruptura) (2026-11-13) |
 | **MSI** | Motorola Solutions, Inc. | Technology | 541.0 | Ruptura · Fase E (Etapa 2) | 2 | 373.42–486.23 | 41.3% | 1.73x | 24.21 ↑ | 5/7 | Ruptura Etapa 2 (2026-11-06) |
 | **MCK** | McKesson Corporation | Healthcare | 1077.32 | Ruptura · Fase E (Etapa 2) | 2 | 722.11–996.84 | 54.0% | 1.71x | 23.5 ↑ | 5/5 | Salió del rango ↑ (sin volumen de ruptura) (2026-11-13) |
 | **DRI** | Darden Restaurants, Inc. | Consumer Cyclical | 241.16 | Ruptura · Fase E (Etapa 2) | 2 | 163.8–217.94 | 28.7% | 1.17x | 19.03 ↑ | 5/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-11-13) |
-| **VRSN** | VeriSign, Inc. | Technology | 319.47 | Ruptura · Fase E (Etapa 2) | 2 | 222.05–305.09 | 33.2% | 1.77x | 18.88 ↑ | 5/5 | Ruptura Etapa 2 (2026-11-06) |
+| **VRSN** | VeriSign, Inc. | Technology | 319.47 | Ruptura · Fase E (Etapa 2) | 2 | 222.05–305.09 | 33.3% | 1.77x | 18.88 ↑ | 5/5 | Ruptura Etapa 2 (2026-11-06) |
 | **CL** | Colgate-Palmolive Company | Consumer Defensive | 99.66 | Ruptura · Fase E (Etapa 2) | 2 | 74.38–92.79 | 22.2% | 1.42x | 13.14 ↑ | 5/7 | Salió del rango ↑ (sin volumen de ruptura) (2026-11-13) |
 | **RSG** | Republic Services, Inc. | Industrials | 254.16 | LPS · Fase D | 1 | 199.03–254.37 | 30.7% | 2.0x | 16.66 ↑ | 6/7 | LPS (2026-08-07) |
 | **STE** | STERIS plc (Ireland) | Healthcare | 261.17 | LPS · Fase D | 1 | 193.46–266.44 | 35.4% | 1.11x | 13.62 ↑ | 6/7 | LPS (2026-09-25) |
@@ -76,13 +76,13 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **ICE** | Intercontinental Exchange Inc. | Financial Services | 177.81 | CHoCH/SOS · Fase D | 1 | 121.39–169.13 | 49.4% | 1.24x | 13.69 ↑ | 7/7 | CHoCH (sin volumen) (2026-10-30) |
 | **PPG** | PPG Industries, Inc. | Basic Materials | 124.61 | CHoCH/SOS · Fase D | 1 | 94.29–130.22 | 26.7% | 1.13x | 12.66 ↑ | 7/7 | CHoCH (sin volumen) (2026-06-12) |
 | **RMD** | ResMed Inc. | Healthcare | 245.7 | CHoCH/SOS · Fase D | 1 | 179.26–241.73 | 42.2% | 1.45x | 8.14 ↑ | 7/7 | CHoCH (sin volumen) (2026-09-18) |
-| **SPGI** | S&P Global Inc. | Financial Services | 460.74 | CHoCH/SOS · Fase D | 1 | 358.55–499.33 | 31.0% | 0.99x | 7.47 ↑ | 7/7 | CHoCH (sin volumen) (2026-10-30) |
+| **SPGI** | S&P Global Inc. | Financial Services | 460.74 | CHoCH/SOS · Fase D | 1 | 357.79–498.27 | 31.0% | 0.99x | 7.7 ↑ | 7/7 | CHoCH (sin volumen) (2026-10-30) |
 | **DIS** | Walt Disney Company (The) | Communication Services | 125.6 | CHoCH/SOS · Fase D | 1 | 87.96–122.91 | 36.5% | 1.63x | 19.34 ↑ | 6/7 | CHoCH + SOS (2026-08-07) |
 | **WMT** | Walmart Inc. | Consumer Defensive | 131.94 | CHoCH/SOS · Fase D | 1 | 106.53–134.84 | 30.4% | 1.55x | 11.33 ↑ | 6/7 | CHoCH (sin volumen) (2026-10-16) |
 | **AVY** | Avery Dennison Corporation | Consumer Cyclical | 191.64 | CHoCH/SOS · Fase D | 1 | 157.26–196.15 | 28.9% | 1.12x | 10.7 ↑ | 6/7 | CHoCH (sin volumen) (2026-11-06) |
 | **PEP** | Pepsico, Inc. | Consumer Defensive | 143.93 | CHoCH/SOS · Fase D | 1 | 123.47–156.66 | 20.1% | 0.87x | 0.18 ↑ | 6/7 | CHoCH (sin volumen) (2026-11-13) |
 | **STZ** | Constellation Brands, Inc. | Consumer Defensive | 139.97 | CHoCH/SOS · Fase D | 1 | 109.73–150.74 | 36.2% | 0.81x | -0.14 ↑ | 6/7 | CHoCH (sin volumen) (2026-11-06) |
-| **CI** | The Cigna Group | Healthcare | 271.42 | CHoCH/SOS · Fase D | 1 | 253.96–299.92 | 21.6% | 1.27x | -2.38 ↓ | 6/7 | CHoCH (sin volumen) (2026-10-16) |
+| **CI** | The Cigna Group | Healthcare | 271.42 | CHoCH/SOS · Fase D | 1 | 253.96–299.92 | 21.6% | 1.28x | -2.38 ↓ | 6/7 | CHoCH (sin volumen) (2026-10-16) |
 | **UBER** | Uber Technologies, Inc. | Technology | 66.35 | CHoCH/SOS · Fase D | 1 | 67.19–85.61 | 30.1% | 1.03x | -10.47 ↑ | 6/7 | CHoCH (sin volumen) (2026-08-21) |
 | **BRO** | Brown & Brown, Inc. | Financial Services | 78.43 | CHoCH/SOS · Fase D | 1 | 54.74–76.07 | 44.1% | 1.37x | 14.3 ↑ | 5/7 | CHoCH (sin volumen) (2026-11-27) |
 | **PGR** | Progressive Corporation (The) | Financial Services | 238.7 | CHoCH/SOS · Fase D | 1 | 189.02–239.26 | 27.2% | 1.4x | 13.04 ↑ | 5/7 | CHoCH (sin volumen) (2026-10-23) |
@@ -143,7 +143,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **CPT** | Camden Property Trust | Real Estate | 99.25 | Rango · Fase B | 3 | 93.6–118.52 | 24.9% | 0.69x | -4.04 ↑ | 6/7 | Rango detectado (2026-07-17) |
 | **MKC** | McCormick & Company, Incorporat | Consumer Defensive | 49.85 | Rango · Fase B | 1 | 42.79–56.27 | 31.5% | 1.11x | -7.39 ↑ | 6/7 | Rango detectado (2026-10-30) |
 | **TXT** | Textron Inc. | Industrials | 80.88 | Rango · Fase B | 1 | 71.87–97.56 | 35.4% | 1.02x | -8.22 ↑ | 6/7 | Rango detectado (2026-10-23) |
-| **TMUS** | T-Mobile US, Inc. | Communication Services | 166.25 | Rango · Fase B | 1 | 143.75–197.72 | 37.5% | 1.03x | -10.59 ↑ | 6/7 | Rango detectado (2026-11-27) |
+| **TMUS** | T-Mobile US, Inc. | Communication Services | 166.25 | Rango · Fase B | 1 | 142.74–196.34 | 37.5% | 1.03x | -9.97 ↑ | 6/7 | Rango detectado (2026-11-27) |
 | **CEG** | Constellation Energy Corporatio | Utilities | 235.28 | Rango · Fase B | 1 | 227.93–316.28 | 35.7% | 0.77x | -17.76 ↓ | 6/7 | Rango detectado (2026-11-06) |
 | **MMM** | 3M Company | Industrials | 189.83 | Rango · Fase B | 2 | 137.44–183.32 | 33.3% | 1.78x | 17.75 ↑ | 5/7 | Rango detectado (2026-08-14) |
 | **ECL** | Ecolab Inc. | Basic Materials | 308.89 | Rango · Fase B | 3 | 241.85–306.79 | 29.4% | 1.38x | 12.23 ↑ | 5/7 | Rango detectado (2026-08-14) |
@@ -151,7 +151,6 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **MSCI** | MSCI Inc. | Financial Services | 633.0 | Rango · Fase B | 3 | 493.99–635.98 | 27.7% | 0.93x | 10.64 ↑ | 5/5 | Rango detectado (2026-05-29) |
 | **COR** | Cencora, Inc. | Healthcare | 354.05 | Rango · Fase B | 1 | 243.32–338.07 | 39.7% | 2.33x | 10.15 ↑ | 5/6 | Rango detectado (2026-09-18) |
 | **HSIC** | Henry Schein, Inc. | Healthcare | 88.73 | Rango · Fase B | 3 | 68.7–92.18 | 22.2% | 1.51x | 9.97 ↑ | 5/7 | Rango detectado (2026-08-28) |
-| **DE** | Deere & Company | Industrials | 641.02 | Rango · Fase B | 1 | 512.59–704.2 | 36.8% | 1.85x | 9.15 ↓ | 5/7 | Rango detectado (2026-09-18) |
 | **BR** | Broadridge Financial Solutions, | Technology | 187.14 | Rango · Fase B | 2 | 133.01–185.77 | 47.4% | 1.7x | 7.88 ↑ | 5/7 | Rango detectado (2026-09-11) |
 | **VRSK** | Verisk Analytics, Inc. | Industrials | 204.76 | Rango · Fase B | 1 | 161.51–225.48 | 39.6% | 1.11x | 6.9 ↑ | 5/5 | Rango detectado (2026-11-13) |
 | **ABT** | Abbott Laboratories | Healthcare | 108.0 | Rango · Fase B | 1 | 83.84–117.07 | 38.6% | 1.84x | 4.14 ↑ | 5/7 | Rango detectado (2026-11-20) |
@@ -159,7 +158,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **UDR** | UDR, Inc. | Real Estate | 36.67 | Rango · Fase B | 3 | 32.42–41.18 | 25.4% | 0.82x | 2.34 ↑ | 5/7 | Rango detectado (2026-07-31) |
 | **AMZN** | Amazon.com, Inc. | Consumer Cyclical | 244.43 | Rango · Fase B | 3 | 196.0–273.88 | 27.3% | 0.78x | 1.21 ↑ | 5/7 | Rango detectado (2026-05-01) |
 | **CMCSA** | Comcast Corporation | Communication Services | 25.73 | Rango · Fase B | 1 | 20.48–26.93 | 31.5% | 1.3x | 0.9 ↑ | 5/7 | Rango detectado (2026-11-13) |
-| **CPRT** | Copart, Inc. | Industrials | 33.17 | Rango · Fase B | 1 | 25.72–35.66 | 34.6% | 1.27x | -0.55 ↑ | 5/7 | Rango detectado (2026-11-06) |
+| **CPRT** | Copart, Inc. | Industrials | 33.17 | Rango · Fase B | 1 | 25.72–35.66 | 34.6% | 1.27x | -0.54 ↑ | 5/7 | Rango detectado (2026-11-06) |
 | **RF** | Regions Financial Corporation | Financial Services | 27.78 | Rango · Fase B | 3 | 24.24–32.14 | 23.0% | 1.34x | -0.7 ↑ | 5/5 | Rango detectado (2026-08-14) |
 | **ALGN** | Align Technology, Inc. | Healthcare | 165.4 | Rango · Fase B | 1 | 138.05–192.45 | 38.3% | 0.89x | -1.44 ↑ | 5/7 | Rango detectado (2026-10-23) |
 | **SLB** | SLB Limited | Energy | 48.52 | Rango · Fase B | 1 | 44.36–60.15 | 35.6% | 1.25x | -1.72 ↓ | 5/7 | Rango detectado (2026-10-23) |
@@ -199,14 +198,15 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | VLTO | 7.5% ✓ | 8.4% ✓ | 4.05 ✓ | 763 M ✓ | 33.0% ✓ | 0.97 ✓ | 17.3% ✓ | 29.7 | 24.8 |
 | CTAS | 10.9% ✓ | 13.3% ✓ | 5.07 ✓ | 1,744 M ✓ | 41.4% ✓ | 0.52 ✓ | 17.8% ✓ | 44.9 | 37.0 |
 | NDAQ | 12.6% ✓ | 31.5% ✓ | 3.66 ✓ | 2,016 M ✓ | 17.3% ✓ | 0.77 ✓ | 36.1% ✓ | 29.3 | 22.5 |
-| COP | 29.3% ✓ | 141.9% ✓ | 9.49 ✓ | 11,465 M ✓ | 17.7% ✓ | 0.35 ✓ | 16.8% ✓ | 14.2 | 11.9 |
+| COP | 29.3% ✓ | 141.9% ✓ | 9.49 ✓ | 11,465 M ✓ | 17.7% ✓ | 0.35 ✓ | 16.8% ✓ | 14.2 | 11.7 |
 | GEHC | 7.2% ✓ | 39.0% ✓ | 4.73 ✓ | 1,831 M ✓ | 20.0% ✓ | 0.88 ✓ | 10.0% ✓ | 17.6 | 15.1 |
 | FAST | 15.5% ✓ | 20.7% ✓ | 1.23 ✓ | 916 M ✓ | 35.3% ✓ | 0.11 ✓ | 15.6% ✓ | 43.0 | 37.4 |
 | CVX | 34.8% ✓ | 178.0% ✓ | 13.62 ✓ | 26,048 M ✓ | 13.9% ✓ | 0.17 ✓ | 11.9% ✓ | 15.5 | 12.8 |
 | ULTA | 8.9% ✓ | 13.3% ✓ | 27.44 ✓ | 914 M ✓ | 46.1% ✓ | 0.95 ✓ | 9.3% ✓ | 23.4 | 20.0 |
 | XOM | 32.6% ✓ | 111.4% ✓ | 9.72 ✓ | 28,319 M ✓ | 15.5% ✓ | 0.13 ✓ | 10.5% ✓ | 16.3 | 12.7 |
-| AMP | 6.1% ✓ | 32.0% ✓ | 44.40 ✓ | 3,179 M ✓ | 72.0% ✓ | 0.76 ✓ | 20.7% ✓ | 11.4 | 9.8 |
-| META | 26.1% ✓ | 264.8% ✓ | 29.31 ✓ | 16,848 M ✓ | 32.3% ✓ | 0.42 ✓ | 31.1% ✓ | 20.8 | 17.1 |
+| AMP | 6.1% ✓ | 32.0% ✓ | 45.04 ✓ | 3,179 M ✓ | 72.0% ✓ | 0.76 ✓ | 20.7% ✓ | 11.2 | 9.8 |
+| META | 26.1% ✓ | 264.8% ✓ | 30.31 ✓ | 16,848 M ✓ | 32.3% ✓ | 0.42 ✓ | 31.1% ✓ | 20.1 | 17.2 |
+| BDX | 5.4% ✓ | 48.6% ✓ | 5.06 ✓ | 4,437 M ✓ | 5.7% ✗ | 0.68 ✓ | 5.9% ✓ | 43.7 | 15.6 |
 | ALLE | 9.6% ✓ | 18.8% ✓ | 8.04 ✓ | 581 M ✓ | 33.6% ✓ | 1.02 ✗ | 15.7% ✓ | 23.9 | 19.0 |
 | AJG | 20.9% ✓ | 49.0% ✓ | 6.55 ✓ | 2,761 M ✓ | 7.2% ✗ | 0.56 ✓ | 10.8% ✓ | 44.6 | 19.8 |
 | MRSH | 8.1% ✓ | 11.9% ✓ | 8.36 ✓ | 4,321 M ✓ | 27.2% ✓ | 1.50 ✗ | 14.2% ✓ | 25.9 | 18.9 |
@@ -218,8 +218,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | MDLZ | 2.3% ✗ | 78.9% ✓ | 3.17 ✓ | 2,784 M ✓ | 15.5% ✓ | 0.84 ✓ | 10.2% ✓ | 21.4 | 20.2 |
 | FTV | 7.8% ✓ | 247.5% ✓ | 2.11 ✓ | 983 M ✓ | 10.6% ✗ | 0.60 ✓ | 14.8% ✓ | 31.3 | 19.8 |
 | DHR | 8.3% ✓ | 37.8% ✓ | 6.04 ✓ | 4,746 M ✓ | 8.2% ✗ | 0.52 ✓ | 16.9% ✓ | 37.6 | 24.4 |
-| RJF | 15.3% ✓ | 15.1% ✓ | 11.91 ✓ | s/d | 18.7% ✓ | 0.48 ✓ | 15.0% ✓ | 13.7 | 9.9 |
-| BDX | -10.5% ✗ | 47.6% ✓ | 5.06 ✓ | 4,143 M ✓ | 5.7% ✗ | 0.66 ✓ | 5.9% ✓ | 43.7 | 15.6 |
+| RJF | 15.3% ✓ | 15.1% ✓ | 11.91 ✓ | s/d | 18.4% ✓ | 0.46 ✓ | 15.0% ✓ | 13.7 | 9.9 |
 | CAH | 5.5% ✓ | 26.6% ✓ | 7.73 ✓ | 5,021 M ✓ | s/d | s/d | 0.7% ✓ | 36.6 | 19.6 |
 | MSI | 12.2% ✓ | -8.1% ✗ | 12.43 ✓ | 1,906 M ✓ | 77.0% ✓ | 3.46 ✗ | 16.5% ✓ | 43.5 | 27.7 |
 | MCK | 7.6% ✓ | 17.0% ✓ | 38.77 ✓ | 7,403 M ✓ | s/d | s/d | 1.1% ✓ | 27.8 | 20.5 |
@@ -231,7 +230,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | BF-B | -1.4% ✗ | 5.7% ✓ | 1.55 ✓ | 686 M ✓ | 18.1% ✓ | 0.62 ✓ | 18.4% ✓ | 19.1 | 17.3 |
 | SHW | 7.9% ✓ | 0.9% ✓ | 10.87 ✓ | 2,478 M ✓ | 63.7% ✓ | 3.72 ✗ | 10.7% ✓ | 33.2 | 27.4 |
 | BLK | 19.1% ✓ | 25.4% ✓ | 43.92 ✓ | 8,455 M ✓ | 11.6% ✗ | 0.22 ✓ | 24.2% ✓ | 26.0 | 17.6 |
-| HD | 4.9% ✗ | 2.8% ✓ | 14.40 ✓ | 11,577 M ✓ | 94.8% ✓ | 3.45 ✗ | 8.4% ✓ | 25.1 | 23.0 |
+| HD | 4.9% ✗ | 2.8% ✓ | 14.40 ✓ | 11,577 M ✓ | 94.8% ✓ | 3.45 ✗ | 8.4% ✓ | 25.1 | 22.9 |
 | MCO | 0.8% ✗ | 17.8% ✓ | 16.39 ✓ | 2,535 M ✓ | 76.7% ✓ | 2.23 ✗ | 35.3% ✓ | 29.6 | 26.1 |
 | TDG | 22.6% ✓ | 33.6% ✓ | 35.51 ✓ | 1,299 M ✓ | s/d | s/d | 20.0% ✓ | 32.4 | 20.5 |
 | IDXX | 9.9% ✓ | 17.9% ✓ | 14.84 ✓ | 1,064 M ✓ | 68.9% ✓ | 0.52 ✓ | 25.4% ✓ | 47.8 | 42.0 |
@@ -243,7 +242,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | WMT | 5.2% ✓ | -19.5% ✗ | 2.76 ✓ | 6,343 M ✓ | 20.6% ✓ | 0.76 ✓ | 2.8% ✓ | 47.8 | 40.9 |
 | AVY | 5.2% ✓ | 5.1% ✓ | 9.24 ✓ | 973 M ✓ | 30.8% ✓ | 1.52 ✗ | 7.6% ✓ | 20.7 | 17.3 |
 | PEP | 5.6% ✓ | 17.4% ✓ | 7.95 ✓ | 9,044 M ✓ | 52.2% ✓ | 2.31 ✗ | 11.1% ✓ | 18.1 | 16.7 |
-| STZ | 6.1% ✓ | 25.3% ✓ | 11.17 ✓ | 1,118 M ✓ | 24.0% ✓ | 1.16 ✗ | 20.9% ✓ | 12.5 | 11.6 |
+| STZ | 6.1% ✓ | 25.3% ✓ | 10.85 ✓ | 1,118 M ✓ | 24.0% ✓ | 1.16 ✗ | 20.9% ✓ | 12.9 | 11.6 |
 | CI | 5.6% ✓ | -21.6% ✗ | 22.68 ✓ | 8,189 M ✓ | 15.6% ✓ | 0.71 ✓ | 2.1% ✓ | 12.0 | 8.2 |
 | UBER | 9.6% ✓ | -92.0% ✗ | 1.70 ✓ | 7,413 M ✓ | 12.3% ✓ | 0.61 ✓ | 6.1% ✓ | 39.0 | 15.1 |
 | BRO | 9.7% ✓ | -1.0% ✗ | 3.16 ✓ | 1,210 M ✓ | 9.8% ✗ | 0.64 ✓ | 17.9% ✓ | 24.8 | 16.5 |
@@ -251,7 +250,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | UPS | 6.7% ✓ | -11.6% ✗ | 5.19 ✓ | 6,260 M ✓ | 28.6% ✓ | 2.03 ✗ | 4.8% ✓ | 21.5 | 13.8 |
 | KR | 2.0% ✗ | 15.3% ✓ | 1.80 ✓ | 2,536 M ✓ | 14.4% ✓ | 4.13 ✗ | 0.7% ✓ | 38.8 | 12.7 |
 | PHM | -9.8% ✗ | -14.5% ✗ | 9.36 ✓ | 844 M ✓ | 13.9% ✓ | 0.18 ✓ | 11.2% ✓ | 14.4 | 14.3 |
-| CMG | 9.6% ✓ | -6.2% ✗ | 1.07 ✓ | 1,184 M ✓ | 48.5% ✓ | 2.28 ✗ | 10.8% ✓ | 35.0 | 28.3 |
+| CMG | 9.6% ✓ | -6.2% ✗ | 1.09 ✓ | 1,184 M ✓ | 48.5% ✓ | 2.28 ✗ | 10.8% ✓ | 34.3 | 28.3 |
 | TSN | 5.2% ✓ | s/d | 1.28 ✓ | 1,433 M ✓ | 2.6% ✗ | 0.49 ✓ | 0.8% ✓ | 49.6 | 13.4 |
 | ORLY | 8.8% ✓ | 14.1% ✓ | 3.26 ✓ | 1,584 M ✓ | s/d | s/d | 14.3% ✓ | 29.7 | 26.4 |
 | AOS | -0.2% ✗ | -1.1% ✗ | 3.58 ✓ | 430 M ✓ | 27.0% ✓ | 0.39 ✓ | 13.0% ✓ | 18.8 | 17.8 |
@@ -266,7 +265,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | SYK | 7.6% ✓ | -11.7% ✗ | 9.39 ✓ | 3,702 M ✓ | 16.0% ✓ | 0.66 ✓ | 13.8% ✓ | 35.5 | 20.4 |
 | TKO | 21.5% ✓ | 185.9% ✓ | 3.73 ✓ | 832 M ✓ | 9.4% ✗ | 0.60 ✓ | 5.2% ✓ | 51.3 | 43.7 |
 | TJX | 5.5% ✓ | 8.6% ✓ | 5.51 ✓ | 4,482 M ✓ | 61.4% ✓ | 1.25 ✗ | 9.8% ✓ | 26.5 | 25.6 |
-| CBRE | 12.7% ✓ | 25.6% ✓ | 4.82 ✓ | 1,274 M ✓ | 16.2% ✓ | 1.13 ✗ | 3.1% ✓ | 28.6 | 15.5 |
+| CBRE | 12.7% ✓ | 25.6% ✓ | 4.67 ✓ | 1,274 M ✓ | 16.2% ✓ | 1.13 ✗ | 3.1% ✓ | 29.5 | 15.5 |
 | DLR | 20.7% ✓ | 220.5% ✓ | 2.37 ✓ | 3,931 M ✓ | 3.3% ✗ | 0.69 ✓ | 13.1% ✓ | 70.2 | 57.5 |
 | HAL | 1.8% ✗ | 2400.0% ✓ | 2.38 ✓ | 1,633 M ✓ | 18.8% ✓ | 0.73 ✓ | 8.9% ✓ | 13.3 | 10.8 |
 | HUBB | 24.6% ✓ | 3.6% ✓ | 17.05 ✓ | 553 M ✓ | 23.4% ✓ | 1.29 ✗ | 13.8% ✓ | 25.1 | 18.6 |
@@ -274,7 +273,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | KMB | -0.4% ✗ | 300.7% ✓ | 5.24 ✓ | 1,602 M ✓ | 78.4% ✓ | 2.12 ✗ | 19.9% ✓ | 20.9 | 15.4 |
 | DHI | -3.2% ✗ | -12.5% ✗ | 10.11 ✓ | 2,339 M ✓ | 12.1% ✓ | 0.26 ✓ | 8.7% ✓ | 15.5 | 14.5 |
 | VMC | -4.7% ✗ | -0.7% ✗ | 8.45 ✓ | 711 M ✓ | 12.9% ✓ | 0.63 ✓ | 13.8% ✓ | 34.4 | 28.9 |
-| INVH | 1.3% ✗ | 21.9% ✓ | 1.14 ✓ | 1,162 M ✓ | 7.4% ✗ | 0.99 ✓ | 23.9% ✓ | 24.4 | 40.4 |
+| INVH | 1.3% ✗ | 21.9% ✓ | 1.14 ✓ | 1,162 M ✓ | 7.4% ✗ | 0.99 ✓ | 23.9% ✓ | 24.4 | 39.5 |
 | HON | 1.3% ✗ | -63.6% ✗ | 20.17 ✓ | 7,022 M ✓ | 44.4% ✓ | 0.76 ✓ | 18.7% ✓ | 11.2 | 22.8 |
 | HSY | 3.0% ✗ | 111.8% ✓ | 8.84 ✓ | 1,671 M ✓ | 38.0% ✓ | 1.11 ✗ | 14.6% ✓ | 20.7 | 19.3 |
 | VICI | 5.8% ✓ | -56.3% ✗ | 2.16 ✓ | 376 M ✓ | 8.3% ✗ | 0.61 ✓ | 56.5% ✓ | 11.6 | 8.5 |
@@ -286,7 +285,7 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | OXY | 19.0% ✓ | 149.4% ✓ | 4.49 ✓ | 4,909 M ✓ | 13.2% ✓ | 0.29 ✓ | 33.0% ✓ | 12.0 | 10.2 |
 | JBHT | 20.4% ✓ | 3.4% ✓ | 7.09 ✓ | 842 M ✓ | 18.8% ✓ | 0.40 ✓ | 5.1% ✓ | 32.1 | 23.2 |
 | NOC | 6.7% ✓ | 2.9% ✓ | 31.68 ✓ | 3,143 M ✓ | 26.1% ✓ | 0.93 ✓ | 10.4% ✓ | 17.5 | 18.6 |
-| ADI | 42.2% ✓ | 113.3% ✓ | 10.21 ✓ | 4,186 M ✓ | 14.8% ✓ | 0.34 ✓ | 32.9% ✓ | 32.6 | 16.8 |
+| ADI | 42.2% ✓ | 112.5% ✓ | 10.21 ✓ | 4,430 M ✓ | 14.8% ✓ | 0.35 ✓ | 32.9% ✓ | 32.6 | 16.8 |
 | PCAR | 19.0% ✓ | 43.6% ✓ | 5.24 ✓ | 1,736 M ✓ | 13.7% ✓ | 0.72 ✓ | 9.5% ✓ | 20.6 | 15.8 |
 | DG | 5.2% ✓ | 33.3% ✓ | 7.70 ✓ | 1,738 M ✓ | 19.7% ✓ | 1.70 ✗ | 3.9% ✓ | 18.1 | 16.7 |
 | XYZ | 9.9% ✓ | 23.8% ✓ | 0.76 ✓ | 837 M ✓ | 2.0% ✗ | 0.33 ✓ | 1.8% ✓ | 100.1 | 14.1 |
@@ -306,9 +305,8 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | ECL | 12.7% ✓ | -4.9% ✗ | 7.35 ✓ | 1,440 M ✓ | 20.8% ✓ | 1.33 ✗ | 12.0% ✓ | 42.0 | 32.6 |
 | ERIE | 0.3% ✗ | -0.5% ✗ | 11.01 ✓ | 509 M ✓ | 23.7% ✓ | 0.02 ✓ | 14.0% ✓ | 25.4 | 21.0 |
 | MSCI | 12.4% ✓ | 14.4% ✓ | 18.91 ✓ | 1,186 M ✓ | s/d | s/d | 40.3% ✓ | 33.5 | 28.2 |
-| COR | 5.5% ✓ | s/d | 17.95 ✓ | 1,790 M ✓ | 129.0% ✓ | 3.06 ✗ | 1.0% ✓ | 19.7 | 16.3 |
+| COR | 5.5% ✓ | s/d | 17.95 ✓ | 1,613 M ✓ | 129.0% ✓ | 3.66 ✗ | 1.0% ✓ | 19.7 | 16.3 |
 | HSIC | 4.0% ✗ | 26.2% ✓ | 3.65 ✓ | 465 M ✓ | 9.2% ✗ | 0.82 ✓ | 3.1% ✓ | 24.3 | 14.8 |
-| DE | 4.9% ✗ | 7.4% ✓ | 17.99 ✓ | 4,516 M ✓ | 18.2% ✓ | 2.30 ✗ | 10.2% ✓ | 35.6 | 28.0 |
 | BR | 5.0% ✓ | -40.7% ✗ | 9.03 ✓ | 1,347 M ✓ | 40.1% ✓ | 1.39 ✗ | 13.9% ✓ | 20.7 | 16.2 |
 | VRSK | 5.3% ✓ | 5.4% ✓ | 6.60 ✓ | 937 M ✓ | s/d | s/d | 27.7% ✓ | 31.0 | 23.5 |
 | ABT | 14.5% ✓ | -43.6% ✗ | 2.68 ✓ | 6,067 M ✓ | 9.1% ✗ | 0.61 ✓ | 9.7% ✓ | 40.3 | 18.2 |

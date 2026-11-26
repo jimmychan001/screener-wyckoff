@@ -1,4 +1,4 @@
-# Seguimiento de mis análisis — 2026-11-25
+# Seguimiento de mis análisis — 2026-11-26
 
 Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actual. Cierre D/W/M = diario, semanal o mensual (la semana y el mes en curso aún no cierran).
 
@@ -11,4 +11,4 @@ Niveles de `seguimiento.csv`. Entre paréntesis: distancia desde el precio actua
 | **AMD** | reacumulación | B | W | 406.03 | 650 (+60.1%) | 430 (+5.9%) | – | 🔴 Bajo nivel bajista | UA en ~650, BC ~585; esperar fase C |
 | **SYK** | acumulación | A | W | 332.90 | 350 (+5.1%) | 267 (-19.8%) | – | ⏳ Entre niveles | Falta el ST: retroceso a 280-300 con menos volumen que el SC |
 | **DOV** | reacumulación | B extendida | W | 205.35 | 234 (+14.0%) | 196 (-4.6%) | 184 (-10.4%) | ⏳ Entre niveles | Fase C pendiente; Test con volumen bajo sobre ~201 |
-| **^IBEX** | acumulación | E | D | 19015.80 | 20300 (+6.8%) | 19580 (+3.0%) | 18650 (-1.9%) | 🔴 Bajo nivel bajista | Objetivo ~20.300; BU debe sostener ~19.580 (sin volumen en Yahoo) |
+| **^IBEX** | acumulación | E | D | 18635.80 | 20300 (+8.9%) | 19580 (+5.1%) | 18650 (+0.1%) | ❌ Invalidado | Objetivo ~20.300; BU debe sostener ~19.580 (sin volumen en Yahoo) |
