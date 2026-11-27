@@ -1,10 +1,6 @@
-📌 Cruces de niveles en mi seguimiento (seguimiento.csv):
-
-- **^IBEX** (acumulación, cierre D del 2026-11-25): ❌ cerró BAJO el nivel de invalidación 18650 (cierre 18635.80). Objetivo ~20.300; BU debe sostener ~19.580 (sin volumen en Yahoo)
-
 Señales nuevas con fundamentales aptos:
 
-- **BRO** (Brown & Brown, Inc.): CHoCH (sin volumen) el 2026-11-27 a 78.43 · fund. 5/7
+- **BRO** (Brown & Brown, Inc.): CHoCH (sin volumen) el 2026-11-27 a 78.38 · fund. 5/7
 - **TSN** (Tyson Foods, Inc.): CHoCH + SOS el 2026-11-20 a 65.12 · fund. 5/6
 
 Reporte completo: reports/latest.md
